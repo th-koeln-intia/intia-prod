@@ -59,17 +59,12 @@ The Default layout that everything is using
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
-                    
-                    
-                     <a for="navbar-click" class="navbar-link">Über</a>
-                    
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Über</a>
                     <div class="navbar-dropdown">
                         
                         <a href="/about/"
-                            class="navbar-item button is-rounded is-dark  ">Plattform</a>
-                        
-                        <a href="/project/"
                             class="navbar-item button is-rounded is-dark  ">Projekt</a>
                         
                         <a href="/network/"
@@ -81,15 +76,13 @@ The Default layout that everything is using
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
-                    
-                    
-                     <a for="navbar-click" class="navbar-link">Wissen</a>
-                    
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Werkzeuge</a>
                     <div class="navbar-dropdown">
                         
-                        <a href="/glossary/"
-                            class="navbar-item button is-rounded is-dark  ">Wörterbuch</a>
+                        <a href="/werkzeuge/"
+                            class="navbar-item button is-rounded is-dark  ">Werkzeuge</a>
                         
                     </div>
                 </div>
@@ -97,15 +90,41 @@ The Default layout that everything is using
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
-                    
-                    
-                     <a for="navbar-click" class="navbar-link">Aktuelles</a>
-                    
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Lösungen</a>
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/loesungen/"
+                            class="navbar-item button is-rounded is-dark  ">Lösungen</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Wissen</a>
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/wissen/"
+                            class="navbar-item button is-rounded is-dark  ">Wissen</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Aktuelles</a>
                     <div class="navbar-dropdown">
                         
                         <a href="/stories/"
-                            class="navbar-item button is-rounded is-dark  ">Neuigkeiten</a>
+                            class="navbar-item button is-rounded is-dark  ">Stories</a>
                         
                     </div>
                 </div>
@@ -113,15 +132,27 @@ The Default layout that everything is using
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
-                    
-                    
-                     <a for="navbar-click" class="navbar-link">Mitmachen</a>
-                    
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Mitmachen</a>
                     <div class="navbar-dropdown">
                         
-                        <a href="/contact/"
-                            class="navbar-item button is-rounded is-dark  ">Kontakt</a>
+                        <a href="/mitmachen/"
+                            class="navbar-item button is-rounded is-dark  ">Mitmachen</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Demos</a>
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/buttons/"
+                            class="navbar-item button is-rounded is-dark  is-active">Button</a>
                         
                     </div>
                 </div>
@@ -132,44 +163,27 @@ The Default layout that everything is using
         </div>
     </div>
 </nav>
-        <div class="arrow-image is-pulled-left is-hidden-mobile">
-            <img id="scroll-up" src="/assets/img/arrow-down.png" alt="placeholder">
-            <img id="scroll-down" src="/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
-        </div>
         
-            <section class="hero is-primary is-hidden-print  is-medium  " >
+            <section class="hero is-primary is-hidden-print  is-medium " >
     <div class="hero-body">
         <div class="container">
-            
-            <h1 class="title is-1  ">Buttons</h1>
-            
+            <img src="https://via.placeholder.com/440x638" alt="placeholder"  class="is-rounded is-hidden-mobile">
+            <h1 class="title is-1">Buttons</h1>
             <p class="subtitle is-4"></p>
             
-            <div class="buttons-hero has-text-centered">
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
-                    <span class="icon is-small">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span>Zur Übersicht</span>
-                </a>
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
-                    <span>Als PDF Herunterladen</span>
-                    <span class="icon is-small">
-                        <i class="fas fa-chevron-right"></i>
-                    </span>
-                </a>
-            </div>
         </div>
+        <img src="../assets/img/arrow.png" alt="placeholder"  class="arrow-image is-pulled-left is-hidden-mobile"> 
     </div>
 </section>
+<i class="fas "></i>
         
-        <div id="main" class="content-wrapper has-background-primary-light">
-            
-            
+        <div class="content-wrapper has-background-primary-light">
             
             
             <div class="columns is-centered">
-                <div id="content" class="container column is-10-desktop is-12-tablet">
+                <div class="column is-10-desktop is-12-tablet">
+                    
+                    
                     <p>Dies ist ein Beispiel für einen Button:
 <a href="/" class="navbar-item button is-rounded is-dark ">
 <span>Test</span>
@@ -223,7 +237,7 @@ Dieser passt sich der Größe seiner Column an.</p>
         <div class="navbar-brand column is-full">
             <a href="/" class="columns navbar-item">
                 <img class="column" src="/assets/img/logo-white.png">
-                <p class="calumn brand-title"></p>
+                <p class="calumn brand-title">Inklusiv für alle</p>
             </a>
         </div>
         <div class="column is-2">
@@ -237,7 +251,7 @@ Dieser passt sich der Größe seiner Column an.</p>
         
         <div class="column ">
             <div class="title">Site Map</div>
-            <div class="columns footer-nav">
+            <div class="columns">
                 
                     <div class="column">
                         <a href=" " class="link"><strong>Über</strong></a>
@@ -245,15 +259,37 @@ Dieser passt sich der Größe seiner Column an.</p>
                         <div class="">
                             
                             <div class="">
-                                <a href="/about/" class="link">Plattform</a>
-                            </div>
-                            
-                            <div class="">
-                                <a href="/project/" class="link">Projekt</a>
+                                <a href="/about/" class="link">Projekt</a>
                             </div>
                             
                             <div class="">
                                 <a href="/network/" class="link">Netzwerk</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Werkzeuge</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/werkzeuge/" class="link">Werkzeuge</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Lösungen</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/loesungen/" class="link">Lösungen</a>
                             </div>
                             
                         </div>                                            
@@ -266,7 +302,7 @@ Dieser passt sich der Größe seiner Column an.</p>
                         <div class="">
                             
                             <div class="">
-                                <a href="/glossary/" class="link">Wörterbuch</a>
+                                <a href="/wissen/" class="link">Wissen</a>
                             </div>
                             
                         </div>                                            
@@ -279,7 +315,7 @@ Dieser passt sich der Größe seiner Column an.</p>
                         <div class="">
                             
                             <div class="">
-                                <a href="/stories/" class="link">Neuigkeiten</a>
+                                <a href="/stories/" class="link">Stories</a>
                             </div>
                             
                         </div>                                            
@@ -292,7 +328,20 @@ Dieser passt sich der Größe seiner Column an.</p>
                         <div class="">
                             
                             <div class="">
-                                <a href="/contact/" class="link">Kontakt</a>
+                                <a href="/mitmachen/" class="link">Mitmachen</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Demos</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/buttons/" class="link">Button</a>
                             </div>
                             
                         </div>                                            
@@ -306,6 +355,12 @@ Dieser passt sich der Größe seiner Column an.</p>
         <div class="column is-2">
             <div class="title">Rechtliches</div>
             <div class="">
+                
+                <div class="">
+                    <div>
+                        <a href="/contact/" class="link">Kontakt</a>
+                    </div>
+                </div>
                 
                 <div class="">
                     <div>
@@ -338,12 +393,12 @@ Dieser passt sich der Größe seiner Column an.</p>
         <div class="columns content is-small has-text-centered footer-logos">
             <div class="column has-text-right"><div class="page-owner">
                 <p class="has-text-left">Eine Seite von</p>
-                <img src="/assets/img/logos/INTIA_Plattform_Logos_TH_weiss.png">
-                <img src="/assets/img/logos/INTIA_Plattform_Logos_Dites_weiss.png">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/TH_Koeln_Logo.svg">
+                <img src="/assets/img/logo-dites.png">
             </div></div>
             <div class="column has-text-left"><div class="page-sponsor">                
                 <p class="has-text-left">Gefördert von</p>
-                <img src="/assets/img/logos/INTIA_Plattform_Logos_BMBF_weiss.png">
+                <img src="https://www.bmbf.de/SiteGlobals/Frontend/Images/icons/_common/logo.svg;jsessionid=73771066A725D13D2D34C4D38E4A181D.live382?__blob=normal&v=3">
             </div></div>
         </div>
         <div class="content is-small has-text-centered">

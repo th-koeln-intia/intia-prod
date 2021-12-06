@@ -59,17 +59,12 @@ The Default layout that everything is using
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
-                    
-                    
-                     <a for="navbar-click" class="navbar-link">Über</a>
-                    
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Über</a>
                     <div class="navbar-dropdown">
                         
                         <a href="/about/"
-                            class="navbar-item button is-rounded is-dark  ">Plattform</a>
-                        
-                        <a href="/project/"
                             class="navbar-item button is-rounded is-dark  ">Projekt</a>
                         
                         <a href="/network/"
@@ -81,15 +76,13 @@ The Default layout that everything is using
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
-                    
-                    
-                     <a for="navbar-click" class="navbar-link">Wissen</a>
-                    
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Werkzeuge</a>
                     <div class="navbar-dropdown">
                         
-                        <a href="/glossary/"
-                            class="navbar-item button is-rounded is-dark  ">Wörterbuch</a>
+                        <a href="/werkzeuge/"
+                            class="navbar-item button is-rounded is-dark  ">Werkzeuge</a>
                         
                     </div>
                 </div>
@@ -97,15 +90,41 @@ The Default layout that everything is using
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
-                    
-                    
-                     <a for="navbar-click" class="navbar-link">Aktuelles</a>
-                    
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Lösungen</a>
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/loesungen/"
+                            class="navbar-item button is-rounded is-dark  is-active">Lösungen</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Wissen</a>
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/wissen/"
+                            class="navbar-item button is-rounded is-dark  ">Wissen</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Aktuelles</a>
                     <div class="navbar-dropdown">
                         
                         <a href="/stories/"
-                            class="navbar-item button is-rounded is-dark  ">Neuigkeiten</a>
+                            class="navbar-item button is-rounded is-dark  ">Stories</a>
                         
                     </div>
                 </div>
@@ -113,15 +132,27 @@ The Default layout that everything is using
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
-                    
-                    
-                     <a for="navbar-click" class="navbar-link">Mitmachen</a>
-                    
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Mitmachen</a>
                     <div class="navbar-dropdown">
                         
-                        <a href="/contact/"
-                            class="navbar-item button is-rounded is-dark  ">Kontakt</a>
+                        <a href="/mitmachen/"
+                            class="navbar-item button is-rounded is-dark  ">Mitmachen</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable ">
+                    <a href=""
+                        class="navbar-link ">Demos</a>
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/buttons/"
+                            class="navbar-item button is-rounded is-dark  ">Button</a>
                         
                     </div>
                 </div>
@@ -132,48 +163,31 @@ The Default layout that everything is using
         </div>
     </div>
 </nav>
-        <div class="arrow-image is-pulled-left is-hidden-mobile">
-            <img id="scroll-up" src="/assets/img/arrow-down.png" alt="placeholder">
-            <img id="scroll-down" src="/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
-        </div>
         
-            <section class="hero is-primary is-hidden-print  is-medium  " >
+            <section class="hero is-primary is-hidden-print  is-medium " >
     <div class="hero-body">
         <div class="container">
-            
-            <h1 class="title is-1  ">Lösungen</h1>
-            
+            <img src="https://via.placeholder.com/440x638" alt="placeholder"  class="is-rounded is-hidden-mobile">
+            <h1 class="title is-1">Lösungen</h1>
             <p class="subtitle is-4"></p>
             
-            <div class="buttons-hero has-text-centered">
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
-                    <span class="icon is-small">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span>Zur Übersicht</span>
-                </a>
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
-                    <span>Als PDF Herunterladen</span>
-                    <span class="icon is-small">
-                        <i class="fas fa-chevron-right"></i>
-                    </span>
-                </a>
-            </div>
         </div>
+        <img src="../assets/img/arrow.png" alt="placeholder"  class="arrow-image is-pulled-left is-hidden-mobile"> 
     </div>
 </section>
+<i class="fas "></i>
         
-        <div id="main" class="content-wrapper has-background-primary-light">
-            
-            
+        <div class="content-wrapper has-background-primary-light">
             
             
             <div class="columns is-centered">
-                <div id="content" class="container column is-10-desktop is-12-tablet">
+                <div class="column is-10-desktop is-12-tablet">
+                    
+                    
                     <h1 id="die-idee">Die Idee</h1>
 <p>Die betreffenden Klient*innen und Fachkräfte nehmen als Expert*innen ihrer selbst an inklusiven Technologieentwicklungsprozessen teil, unterstützt durch Forschende und Studierende aus Informatik, Design und Sozialer Arbeit. Die unterschiedlichen Zielgruppen sollen in die Lage versetzt werden, technologische Lösungen selbst zu erfinden, zu gestalten und anzupassen, und auf diese Weise Selbstwirksamkeit im Kontext der Nutzung digitaler Technologien erleben.</p>
 <p>Im Bereich der Informatik verlangt die Befähigung von Techniklaien, inklusiv Lösungen für eigene Bedarfe zu entwickeln, nach einem Lösungsansatz, mit dem simpel und nach einem Ansatz des Design for All unterschiedliche Softwaredienste und Hardwarekomponenten kombiniert und eingesetzt werden können. In der Praxis werden selbst in stark partizipativen Ansätzen wie in digitalen Makerspaces und Fablabs Dienste und Endgeräte i.d.R. von IT-Fachleuten konfiguriert. Methoden, mittels derer Stakeholder mit geringer Technikaffinität selbst digitale lebenserleichternde Maßnahmen zusammen mit den Klient*innen (bedarfsorientiert) konfigurieren können, fehlen.</p>
-<p>Diese Lücke will INTIA füllen. Das Projekt macht sich dabei zunutze, dass Lösungen für die Integration von Hardwarekomponenten sowie die Kombination von Softwarediensten und Apps zunehmend als Open Source verfügbar sind. Der Markt bietet heute zudem eine große Vielfalt an preisgünstigen Komponenten zur intelligenten Vernetzung von Haustechnik, Haushaltsgeräten und Unterhaltungselektronik an. Im Rahmen des INTIA-Projektes wird eine umfassende, zielgruppenangepasste Bedienschicht erstellt und <a href="/glossary/partizipation/">partizipativ</a> weiterentwickelt, die es Fachkräften in der Sozialen Arbeit ermöglichen wird, mit Hilfe eines digitalen Baukasten-Prinzips und inklusiver Designmethoden selbst ein digitales Alltagslabor aufzubauen und zu betreiben. Solche Alltagslabore können entweder als dauerhafte Medienzentren in Einrichtungen der Sozialen Arbeit etabliert werden, oder in Form eines „mobilen Alltagslabors“ für gezielte, zeitlich begrenzte Aktivitäten in der Jugend- und Behindertenhilfe zum Einsatz kommen.</p>
+<p>Diese Lücke will INTIA füllen. Das Projekt macht sich dabei zunutze, dass Lösungen für die Integration von Hardwarekomponenten sowie die Kombination von Softwarediensten und Apps zunehmend als Open Source verfügbar sind. Der Markt bietet heute zudem eine große Vielfalt an preisgünstigen Komponenten zur intelligenten Vernetzung von Haustechnik, Haushaltsgeräten und Unterhaltungselektronik an. Im Rahmen des INTIA-Projektes wird eine umfassende, zielgruppenangepasste Bedienschicht erstellt und partizipativ weiterentwickelt, die es Fachkräften in der Sozialen Arbeit ermöglichen wird, mit Hilfe eines digitalen Baukasten-Prinzips und inklusiver Designmethoden selbst ein digitales Alltagslabor aufzubauen und zu betreiben. Solche Alltagslabore können entweder als dauerhafte Medienzentren in Einrichtungen der Sozialen Arbeit etabliert werden, oder in Form eines „mobilen Alltagslabors“ für gezielte, zeitlich begrenzte Aktivitäten in der Jugend- und Behindertenhilfe zum Einsatz kommen.</p>
 <h2 id="die-ziele">Die Ziele</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor id aliquet lectus proin nibh. Neque gravida in fermentum et sollicitudin ac orci phasellus. Amet purus gravida quis blandit turpis cursus. Diam sit amet nisl suscipit adipiscing bibendum est ultricies. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Et odio pellentesque diam volutpat. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Proin fermentum leo vel orci porta non pulvinar neque. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Non diam phasellus vestibulum lorem sed.</p>
 <h3 id="ziel-1">Ziel 1</h3>
@@ -186,7 +200,7 @@ The Default layout that everything is using
 <h3 id="prinzip-3">Prinzip 3</h3>
 <h2 id="das-vorgehen">Das Vorgehen</h2>
 <p>Am Anfang des Projektes steht die Rekrutierung und Motivierung von Klient*innen sowie pädagogische Fachkräften in ausgewählten Einrichtungen der beteiligten Träger der Jugend- und Behindertenhilfe. Zielgruppen sind dabei: Bewohner*innen von Verselbständigungsgruppen (angehende Careleaver) in stationären Einrichtungen; Junge Menschen mit geistiger Behinderung und/oder Lernbeeinträchtigung; Junge Mütter mit Behinderung.</p>
-<p>Mittels geeigneter Methoden werden im nächsten Schritt teilhabe- und selbstbestimmungsorientierte Bedarfe der Zielgruppen identifiziert. Möglichkeiten für digitale Hilfeleistungen werden gemeinschaftlich erforscht (Citizen Science Ansatz). Auf Basis der Erkenntnisse werden in Alltagslabor-Workshops Anwendungen zur digitalen Hilfe und Teilhabe mithilfe partizipativer inklusiver Entwicklungsprozesse entwickelt. Das heißt konkret: Technologien werden von den beiden Zielgruppen visioniert und <a href="/glossary/partizipation/">partizipativ</a> — orientiert an Nützlichkeit, Einfachheit der Nutzung, Anpassung an Bedarfe entsprechend bekannter Technologieakzeptanzmodelle — co-kreativ designt und im Alltag erprobt. Die parallel stattfindende, sorgfältige Begleitforschung gibt Hinweise für erforderliche Anpassungen. Die iterative Weiterentwickelung erfolgt bis zu dem Punkt, an dem die Anwendungen den Nutzungsbedürfnissen voll entsprechen.</p>
+<p>Mittels geeigneter Methoden werden im nächsten Schritt teilhabe- und selbstbestimmungsorientierte Bedarfe der Zielgruppen identifiziert. Möglichkeiten für digitale Hilfeleistungen werden gemeinschaftlich erforscht (Citizen Science Ansatz). Auf Basis der Erkenntnisse werden in Alltagslabor-Workshops Anwendungen zur digitalen Hilfe und Teilhabe mithilfe partizipativer inklusiver Entwicklungsprozesse entwickelt. Das heißt konkret: Technologien werden von den beiden Zielgruppen visioniert und partizipativ — orientiert an Nützlichkeit, Einfachheit der Nutzung, Anpassung an Bedarfe entsprechend bekannter Technologieakzeptanzmodelle — co-kreativ designt und im Alltag erprobt. Die parallel stattfindende, sorgfältige Begleitforschung gibt Hinweise für erforderliche Anpassungen. Die iterative Weiterentwickelung erfolgt bis zu dem Punkt, an dem die Anwendungen den Nutzungsbedürfnissen voll entsprechen.</p>
 <p>Schließlich münden die Aktivitäten in Good-Practice-Technologien und Nutzungskontexte, die zusammen mit Entwurfsmustern in mobilen Laborkoffern bereitgestellt werden. Dadurch wird das Konzept mobil und erreicht diverse Bereiche der Sozialen Arbeit. Kooperationspartner aus der Jugend- und Behindertenhilfe übernehmen das Konzept mobiler Alltagslabore für die regionale und überregionale Weiterbildung pädagogischer Fachkräfte zu konkret erprobtem, hilfreichen Technologieeinsatz in der Sozialen Arbeit. Mobile Alltagslabore werden auch in Hackathons und MakerSpaces angeboten, um dort Inklusions- und Teilhabefragen zu promoten.</p>
 <h1 id="das-forschungsprojekt-intia">Das Forschungsprojekt INTIA</h1>
 <p>INTIA ist ein von der TH Köln koordiniertes Projekt, in dem der Forschungsschwerpunkt Digitale Technologien und Soziale Dienste (DITES) mit seinen Bereichen Soziale Arbeit Medien + Bildung (Prof. Dr. Isabel Zorn), Informatik und Soziotechnik (Prof. Dr. Stefan Bente und Prof. Dr. Christian Kohls) und Service-Design &amp; Co-Creation (Prof. Birgit Mager) mit Einrichtungen der Behinderten- und Erziehungshilfe (Diakonie Michaelshoven; Evangelische Jugendhilfe Bonn, intra Bonn) sowie der Fachstelle Jugendmedienkultur (FJMK) kooperieren. Das Projekt hat am 1. Mai 2019 begonnen und hat eine Dauer von 36 Monaten, plus weitere 12 Monate für eine Promotion.</p>
@@ -215,7 +229,7 @@ Mehr über die Personen hinter dem Projekt-Start</a>
         <div class="navbar-brand column is-full">
             <a href="/" class="columns navbar-item">
                 <img class="column" src="/assets/img/logo-white.png">
-                <p class="calumn brand-title"></p>
+                <p class="calumn brand-title">Inklusiv für alle</p>
             </a>
         </div>
         <div class="column is-2">
@@ -229,7 +243,7 @@ Mehr über die Personen hinter dem Projekt-Start</a>
         
         <div class="column ">
             <div class="title">Site Map</div>
-            <div class="columns footer-nav">
+            <div class="columns">
                 
                     <div class="column">
                         <a href=" " class="link"><strong>Über</strong></a>
@@ -237,15 +251,37 @@ Mehr über die Personen hinter dem Projekt-Start</a>
                         <div class="">
                             
                             <div class="">
-                                <a href="/about/" class="link">Plattform</a>
-                            </div>
-                            
-                            <div class="">
-                                <a href="/project/" class="link">Projekt</a>
+                                <a href="/about/" class="link">Projekt</a>
                             </div>
                             
                             <div class="">
                                 <a href="/network/" class="link">Netzwerk</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Werkzeuge</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/werkzeuge/" class="link">Werkzeuge</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Lösungen</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/loesungen/" class="link">Lösungen</a>
                             </div>
                             
                         </div>                                            
@@ -258,7 +294,7 @@ Mehr über die Personen hinter dem Projekt-Start</a>
                         <div class="">
                             
                             <div class="">
-                                <a href="/glossary/" class="link">Wörterbuch</a>
+                                <a href="/wissen/" class="link">Wissen</a>
                             </div>
                             
                         </div>                                            
@@ -271,7 +307,7 @@ Mehr über die Personen hinter dem Projekt-Start</a>
                         <div class="">
                             
                             <div class="">
-                                <a href="/stories/" class="link">Neuigkeiten</a>
+                                <a href="/stories/" class="link">Stories</a>
                             </div>
                             
                         </div>                                            
@@ -284,7 +320,20 @@ Mehr über die Personen hinter dem Projekt-Start</a>
                         <div class="">
                             
                             <div class="">
-                                <a href="/contact/" class="link">Kontakt</a>
+                                <a href="/mitmachen/" class="link">Mitmachen</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Demos</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/buttons/" class="link">Button</a>
                             </div>
                             
                         </div>                                            
@@ -298,6 +347,12 @@ Mehr über die Personen hinter dem Projekt-Start</a>
         <div class="column is-2">
             <div class="title">Rechtliches</div>
             <div class="">
+                
+                <div class="">
+                    <div>
+                        <a href="/contact/" class="link">Kontakt</a>
+                    </div>
+                </div>
                 
                 <div class="">
                     <div>
@@ -330,12 +385,12 @@ Mehr über die Personen hinter dem Projekt-Start</a>
         <div class="columns content is-small has-text-centered footer-logos">
             <div class="column has-text-right"><div class="page-owner">
                 <p class="has-text-left">Eine Seite von</p>
-                <img src="/assets/img/logos/INTIA_Plattform_Logos_TH_weiss.png">
-                <img src="/assets/img/logos/INTIA_Plattform_Logos_Dites_weiss.png">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/TH_Koeln_Logo.svg">
+                <img src="/assets/img/logo-dites.png">
             </div></div>
             <div class="column has-text-left"><div class="page-sponsor">                
                 <p class="has-text-left">Gefördert von</p>
-                <img src="/assets/img/logos/INTIA_Plattform_Logos_BMBF_weiss.png">
+                <img src="https://www.bmbf.de/SiteGlobals/Frontend/Images/icons/_common/logo.svg;jsessionid=73771066A725D13D2D34C4D38E4A181D.live382?__blob=normal&v=3">
             </div></div>
         </div>
         <div class="content is-small has-text-centered">
