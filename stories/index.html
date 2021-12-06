@@ -1,0 +1,486 @@
+<!--
+The Default layout that everything is using 
+-->
+
+<!-- Control the width with, if sidebars or menus should appear   -->
+
+
+<!DOCTYPE html>
+<html id="default-layout">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Neuigkeiten | INTIA</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Neuigkeiten" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A plattform for methods, techniques, toolkits and patterns for participative development in a social context." />
+<meta property="og:description" content="A plattform for methods, techniques, toolkits and patterns for participative development in a social context." />
+<link rel="canonical" href="/stories/" />
+<meta property="og:url" content="/stories/" />
+<meta property="og:site_name" content="INTIA" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Neuigkeiten" />
+<script type="application/ld+json">
+{"description":"A plattform for methods, techniques, toolkits and patterns for participative development in a social context.","url":"/stories/","@type":"WebPage","headline":"Neuigkeiten","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- head scripts -->
+<script type="module" src="/assets/js/main.js"async></script></head>
+
+    <body>
+        <nav class="navbar is-hidden-print is-primary is-fixed-top" x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/" class="">
+                <img src="/assets/img/logo-black.png">
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
+                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-end buttons">
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
+                    
+                    
+                     <a for="navbar-click" class="navbar-link">Über</a>
+                    
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/about/"
+                            class="navbar-item button is-rounded is-dark  ">Plattform</a>
+                        
+                        <a href="/project/"
+                            class="navbar-item button is-rounded is-dark  ">Projekt</a>
+                        
+                        <a href="/network/"
+                            class="navbar-item button is-rounded is-dark  ">Netzwerk</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
+                    
+                    
+                     <a for="navbar-click" class="navbar-link">Wissen</a>
+                    
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/glossary/"
+                            class="navbar-item button is-rounded is-dark  ">Wörterbuch</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    is-active-header  ">
+                    
+                    
+                     <a for="navbar-click" class="navbar-link">Aktuelles</a>
+                    
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/stories/"
+                            class="navbar-item button is-rounded is-dark   is-active ">Neuigkeiten</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
+                    
+                    
+                     <a for="navbar-click" class="navbar-link">Mitmachen</a>
+                    
+                    <div class="navbar-dropdown">
+                        
+                        <a href="/contact/"
+                            class="navbar-item button is-rounded is-dark  ">Kontakt</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</nav>
+        <div class="arrow-image is-pulled-left is-hidden-mobile">
+            <img id="scroll-up" src="/assets/img/arrow-down.png" alt="placeholder">
+            <img id="scroll-down" src="/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
+        </div>
+        
+            <section class="hero is-primary is-hidden-print  is-medium   subpage " >
+    <div class="hero-body">
+        <div class="container">
+            
+                <h1 class="overtitle subtitle is-4">AKTUELLES</h1>
+            
+            <h1 class="title is-1   title-with-overtitle ">Neuigkeiten</h1>
+            
+            <p class="subtitle is-4">Hier gibt es alle Neuigkeiten rund um die Angebote von INTIA. Außerdem sammeln wir hier, was andere über uns schreiben.
+</p>
+            
+            <div class="buttons-hero has-text-centered">
+                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span>Zur Übersicht</span>
+                </a>
+                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                    <span>Als PDF Herunterladen</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <div id="main" class="content-wrapper has-background-primary-light">
+            
+            
+            
+<div class="green">
+
+<div class="story-carousel-item">
+    <div class="container">
+        <div class="section">
+          <div class="slider story-slider columns">
+            <div class="slider-image column is-half">
+              <figure class="image">
+                <img src="/assets/img/uploads/prototypen_mit_jugendlichen.jpg" alt="this used to be photo">             
+              </figure>
+            </div>
+            <div class="slider-content column is-half">
+                <div class="media">
+                  <div class="media-content">
+                    <h2>Prototypen mit Jugendlichen entwickeln</h2>
+                  </div>
+                </div>
+    
+                <div class="content">
+                  <p>Methoden einer inklusiven Prototypenentwicklung mit Jugendlichen mit Beeinträchtigung.</p>
+                  <a href="/stories/inklusive-prototypenentwicklung/" class="button is-rounded has-text-centert is-dark ">
+                      <span>Mehr lesen</span>
+                      <span class="icon is-small">
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                      </span>
+                  </a>           
+                </div>
+              </div>
+          </div>
+    </div>
+    </div>
+</div>
+</div>
+
+            
+            <div class="columns is-centered">
+                <div id="content" class="container column is-10-desktop is-12-tablet">
+                    <h1 id="ltere-eintrge">Ältere Einträge</h1>
+<div class="news">
+    <div class="news-item">
+      <div class="container">
+        <div class="section">
+          <div class="story-news columns">
+            <div class="news-image column is-half">
+              <figure class="image">
+                <img src=/assets/img/uploads/prototypen_mit_jugendlichen.jpg alt="this used to be photo">             
+              </figure>
+            </div>
+            <div class="news-content column is-half">
+                <div class="media">
+                  <div class="media-content">
+                    <h4>04.06.2021</h4>
+                    <h2>Prototypen mit Jugendlichen entwickeln</h2>
+                  </div>
+                </div>                
+                <div class="content">
+                  <p>
+                  Methoden einer inklusiven Prototypenentwicklung mit Jugendlichen mit Beeinträchtigung.</p>
+                  <a href="/stories/inklusive-prototypenentwicklung/" class="button is-rounded has-text-centert is-dark ">
+                      <span>Mehr lesen</span>
+                      <span class="icon is-small">
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                      </span>
+                  </a>           
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="news">
+    <div class="news-item">
+      <div class="container">
+        <div class="section">
+          <div class="story-news columns">
+            <div class="news-image column is-half">
+              <figure class="image">
+                <img src=/assets/img/uploads/remote_messenger.jpg alt="this used to be photo">             
+              </figure>
+            </div>
+            <div class="news-content column is-half">
+                <div class="media">
+                  <div class="media-content">
+                    <h4>01.02.2021</h4>
+                    <h2>Forschung remote über Messenger</h2>
+                  </div>
+                </div>                
+                <div class="content">
+                  <p>
+                  Forschungsdaten erheben trotz Kontaktbeschränkungen: Wie geht das mit einem Messenger?</p>
+                  <a href="/stories/messenger/" class="button is-rounded has-text-centert is-dark ">
+                      <span>Mehr lesen</span>
+                      <span class="icon is-small">
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                      </span>
+                  </a>           
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="news">
+    <div class="news-item">
+      <div class="container">
+        <div class="section">
+          <div class="story-news columns">
+            <div class="news-image column is-half">
+              <figure class="image">
+                <img src= alt="this used to be photo">             
+              </figure>
+            </div>
+            <div class="news-content column is-half">
+                <div class="media">
+                  <div class="media-content">
+                    <h4>12.02.2020</h4>
+                    <h2>Forschungsdaten erheben trotz COVID-19 Kontaktbeschränkungen: Wie geht das mit einem Messenger?</h2>
+                  </div>
+                </div>                
+                <div class="content">
+                  <p>
+                  </p>
+                  <a href="/stories/messenger/" class="button is-rounded has-text-centert is-dark ">
+                      <span>Mehr lesen</span>
+                      <span class="icon is-small">
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                      </span>
+                  </a>           
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="news">
+    <div class="news-item">
+      <div class="container">
+        <div class="section">
+          <div class="story-news columns">
+            <div class="news-image column is-half">
+              <figure class="image">
+                <img src=/assets/img/posts/photoprobe.jpg alt="this used to be photo">             
+              </figure>
+            </div>
+            <div class="news-content column is-half">
+                <div class="media">
+                  <div class="media-content">
+                    <h4>10.01.2020</h4>
+                    <h2>Selbst forschen mit INTIA Probe Kits</h2>
+                  </div>
+                </div>                
+                <div class="content">
+                  <p>
+                  Um trotz der Corona-Pandemie eine partizipative User Research zu ermöglichen, wurden im Projekt INTIA eigene Probe Kits entwickelt, die eine Einbindung der Teilnehmenden in den Prozess trotz existierender Hygiene-Auflagen ermöglicht.
+</p>
+                  <a href="/stories/probes/" class="button is-rounded has-text-centert is-dark ">
+                      <span>Mehr lesen</span>
+                      <span class="icon is-small">
+                      <i class="fas fa-chevron-right fa-xs"></i>
+                      </span>
+                  </a>           
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                </div>
+            </div> 
+        </div> 
+        
+            <footer class="footer is-hidden-print is-primary">
+    
+    <div class="container columns is-centered is-multiline is-bordered-bottom">
+        <div class="navbar-brand column is-full">
+            <a href="/" class="columns navbar-item">
+                <img class="column" src="/assets/img/logo-white.png">
+                <p class="calumn brand-title"></p>
+            </a>
+        </div>
+        <div class="column is-2">
+            <div class="title">www.intia.de</div>
+                TH-Köln | DITIS<br>
+                Campus Südstadt<br>
+                Ubierring 48<br>
+                50678 Köln
+
+        </div>
+        
+        <div class="column ">
+            <div class="title">Site Map</div>
+            <div class="columns footer-nav">
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Über</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/about/" class="link">Plattform</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/project/" class="link">Projekt</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/network/" class="link">Netzwerk</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Wissen</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/glossary/" class="link">Wörterbuch</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Aktuelles</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/stories/" class="link">Neuigkeiten</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href=" " class="link"><strong>Mitmachen</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/contact/" class="link">Kontakt</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="column is-2">
+            <div class="title">Rechtliches</div>
+            <div class="">
+                
+                <div class="">
+                    <div>
+                        <a href="/about/" class="link">Über die Plattform</a>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <div>
+                        <a href="https://www.th-koeln.de/hochschule/impressum_8159.php" class="link">Impressum</a>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <div>
+                        <a href="https://www.th-koeln.de/hochschule/haftungshinweis_8277.php" class="link">Haftungshinweis</a>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <div>
+                        <a href="https://www.th-koeln.de/hochschule/datenschutzhinweis_8279.php" class="link">Datenschutzhinweis</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+        <div class="columns content is-small has-text-centered footer-logos">
+            <div class="column has-text-right"><div class="page-owner">
+                <p class="has-text-left">Eine Seite von</p>
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_TH_weiss.png">
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_Dites_weiss.png">
+            </div></div>
+            <div class="column has-text-left"><div class="page-sponsor">                
+                <p class="has-text-left">Gefördert von</p>
+                <img src="/assets/img/logos/INTIA_Plattform_Logos_BMBF_weiss.png">
+            </div></div>
+        </div>
+        <div class="content is-small has-text-centered">
+            <p class="">INTIA, 2021</p>
+        </div>
+    
+</footer>
+
+        
+    </body>
+</html>
