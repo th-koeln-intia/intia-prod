@@ -160,13 +160,13 @@ The Default layout that everything is using
                 </a>
             
             <div class="buttons-hero has-text-centered">
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                <a  onclick="window.history.back()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
                     <span class="icon is-small">
                         <i class="fas fa-chevron-left"></i>
                     </span>
                     <span>Zur Übersicht</span>
                 </a>
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                <a  onclick="window.print()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
                     <span>Als PDF Herunterladen</span>
                     <span class="icon is-small">
                         <i class="fas fa-chevron-right"></i>
@@ -185,6 +185,37 @@ The Default layout that everything is using
         <h1 class="slider-titel">Aktuelles</h1>
 
         <div class="carousel">
+            
+            <div class="story-carousel-item">
+                <div class="container">
+                    <div class="section">
+                      <div class="slider story-slider columns">
+                        <div class="slider-image column is-half">
+                          <figure class="image">
+                            <img src="/assets/img/uploads/neuigkeiten-intia-ist-online.jpeg" alt="this used to be photo">             
+                          </figure>
+                        </div>
+                        <div class="slider-content column is-half">
+                            <div class="media">
+                              <div class="media-content">
+                                <h2>Die Plattform INTIA ist online</h2>
+                              </div>
+                            </div>
+                
+                            <div class="content">
+                              <p>Endlich ist es soweit: Die Plattform INTIA ist nun online und für alle verfügbar.</p>
+                              <a href="/stories/die-plattform-intia-ist-online/" class="button is-rounded has-text-centert is-dark ">
+                                  <span>Mehr lesen</span>
+                                  <span class="icon is-small">
+                                  <i class="fas fa-chevron-right fa-xs"></i>
+                                  </span>
+                              </a>           
+                            </div>
+                          </div>
+                      </div>
+                </div>
+                </div>
+            </div>
             
             <div class="story-carousel-item">
                 <div class="container">

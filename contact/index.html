@@ -151,13 +151,13 @@ The Default layout that everything is using
 </p>
             
             <div class="buttons-hero has-text-centered">
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                <a  onclick="window.history.back()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
                     <span class="icon is-small">
                         <i class="fas fa-chevron-left"></i>
                     </span>
                     <span>Zur Übersicht</span>
                 </a>
-                <a  href=""  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
+                <a  onclick="window.print()"  class="button is-rounded is-dark { % if item.link == page.url % } { % endif % }">
                     <span>Als PDF Herunterladen</span>
                     <span class="icon is-small">
                         <i class="fas fa-chevron-right"></i>
@@ -226,7 +226,8 @@ The Default layout that everything is using
                 </div>
                 
                 <div class="column contact-agree">
-                  <label for="agree">Ich akzeptiere das für die Daten-Erfassung der Dienst Formspark.io genutzt wird. Für nähere Informationen zur Daten-Erfassung <a href="https://formspark.io/legal/privacy-policy/">hier klicken</a>.</label><br><br>
+                  <label for="agree">Ich akzeptiere, dass für die Daten-Erfassung der Dienst Formspark.io genutzt wird. Für nähere Informationen zur Daten-Erfassung <a href="https://formspark.io/legal/privacy-policy/">hier klicken</a>.
+</label><br><br>
                   <button class="button is-rounded is-dark" type="submit">Abschicken</button>
                 </div>
               </div>
