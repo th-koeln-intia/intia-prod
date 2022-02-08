@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/glossary/alltagsbew%C3%A4ltigung/</loc>
-<lastmod>2021-12-20T10:19:04+00:00</lastmod>
+<loc>/glossary/alltagsbewaeltigung/</loc>
+<lastmod>2022-02-08T15:24:07+00:00</lastmod>
 </url>
 <url>
 <loc>/glossary/partizipation/</loc>
-<lastmod>2021-12-20T10:19:04+00:00</lastmod>
+<lastmod>2022-02-08T15:24:07+00:00</lastmod>
 </url>
 <url>
 <loc>/glossary/vulnerabel/</loc>
-<lastmod>2021-12-20T10:19:04+00:00</lastmod>
+<lastmod>2022-02-08T15:24:07+00:00</lastmod>
 </url>
 <url>
 <loc>/stories/probes/</loc>
@@ -27,6 +27,10 @@
 <url>
 <loc>/stories/die-plattform-intia-ist-online/</loc>
 <lastmod>2021-12-13T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>/stories/intia-escape-game-geschafft-intia-koffer-testen-im-piksl-labor-koeln/</loc>
+<lastmod>2022-01-12T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>/about/</loc>
@@ -47,6 +51,9 @@
 <loc>/intia-case/</loc>
 </url>
 <url>
+<loc>/methods/</loc>
+</url>
+<url>
 <loc>/network/</loc>
 </url>
 <url>
@@ -60,6 +67,6 @@
 </url>
 <url>
 <loc>/admin/</loc>
-<lastmod>2021-12-20T10:18:56+00:00</lastmod>
+<lastmod>2022-02-08T15:23:58+00:00</lastmod>
 </url>
 </urlset>
