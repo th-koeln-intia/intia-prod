@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/glossary/alltagsbewaeltigung/</loc>
-<lastmod>2022-02-10T16:55:24+00:00</lastmod>
+<lastmod>2022-02-16T13:21:42+00:00</lastmod>
 </url>
 <url>
 <loc>/glossary/partizipation/</loc>
-<lastmod>2022-02-10T16:55:24+00:00</lastmod>
+<lastmod>2022-02-16T13:21:42+00:00</lastmod>
 </url>
 <url>
 <loc>/glossary/vulnerabel/</loc>
-<lastmod>2022-02-10T16:55:24+00:00</lastmod>
+<lastmod>2022-02-16T13:21:42+00:00</lastmod>
 </url>
 <url>
 <loc>/stories/probes/</loc>
@@ -31,6 +31,10 @@
 <url>
 <loc>/stories/intia-escape-game-geschafft-intia-koffer-testen-im-piksl-labor-koeln/</loc>
 <lastmod>2022-01-12T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>/stories/escape-game-als-leichter-einstieg-f%C3%BCr-den-intia-koffer/</loc>
+<lastmod>2022-02-15T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>/about/</loc>
@@ -67,6 +71,6 @@
 </url>
 <url>
 <loc>/admin/</loc>
-<lastmod>2022-02-10T16:55:13+00:00</lastmod>
+<lastmod>2022-02-16T13:21:32+00:00</lastmod>
 </url>
 </urlset>
