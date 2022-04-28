@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/knowhow/glossary/alltagsbewaeltigung/</loc>
-<lastmod>2022-03-21T15:09:15+00:00</lastmod>
+<lastmod>2022-04-28T09:41:35+00:00</lastmod>
 </url>
 <url>
 <loc>/knowhow/glossary/partizipation/</loc>
-<lastmod>2022-03-21T15:09:15+00:00</lastmod>
+<lastmod>2022-04-28T09:41:35+00:00</lastmod>
 </url>
 <url>
 <loc>/knowhow/glossary/vulnerabel/</loc>
-<lastmod>2022-03-21T15:09:15+00:00</lastmod>
+<lastmod>2022-04-28T09:41:35+00:00</lastmod>
 </url>
 <url>
 <loc>/stories/probes/</loc>
@@ -37,6 +37,14 @@
 <lastmod>2022-02-15T00:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>/stories/modularitaet/</loc>
+<lastmod>2022-03-30T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>/stories/ergebnistagung-des-projektes-intia-am-09-juni/</loc>
+<lastmod>2022-04-28T00:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>/about/plattform</loc>
 </url>
 <url>
@@ -47,6 +55,9 @@
 </url>
 <url>
 <loc>/knowhow/instructions/installation</loc>
+</url>
+<url>
+<loc>/knowhow/instructions/how_to_pack</loc>
 </url>
 <url>
 <loc>/tools/building_blocks/</loc>
@@ -73,7 +84,7 @@
 <loc>/knowhow/instructions/</loc>
 </url>
 <url>
-<loc>/intia-case_old/</loc>
+<loc>/pages/case/intia-case%20copy.html</loc>
 </url>
 <url>
 <loc>/intia-case/content/</loc>
@@ -101,6 +112,6 @@
 </url>
 <url>
 <loc>/admin/</loc>
-<lastmod>2022-03-21T15:09:04+00:00</lastmod>
+<lastmod>2022-04-28T09:41:29+00:00</lastmod>
 </url>
 </urlset>

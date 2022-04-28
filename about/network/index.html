@@ -20,6 +20,11 @@ The Default layout that everything is using
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://methods.intia.de/src/radar/radar.js"></script>
+        <link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />
+    
+    
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -57,12 +62,31 @@ The Default layout that everything is using
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end buttons">
+            <div id="SearchOverlay" class="searchbar-overlay navbar-end buttons">
+                <div class="navbar-item searchbar">
+                    <div class="field">
+                        <div id="search-container" class="control">
+                          <input class="input search-input" type="text" id="search-input" placeholder="Suchbegriff eintippen">
+                        </div>
+                    </div>
+                    <ul id="results-container" class="search-result-list"></ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="closeSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-remove"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+            <div id="navmenu" class="navbar-end buttons">
                 
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        is-active-header    ">
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
                     
                     
                      <a for="navbar-click" class="navbar-link">Über</a>
@@ -74,9 +98,6 @@ The Default layout that everything is using
                         
                         <a href="/about/project/"
                             class="navbar-item button is-rounded is-dark  ">Projekt</a>
-                        
-                        <a href="/about/network/"
-                            class="navbar-item button is-rounded is-dark   is-active ">Netzwerk</a>
                         
                         <a href="/about/accessibility/"
                             class="navbar-item button is-rounded is-dark  ">Barrierearm</a>
@@ -175,24 +196,64 @@ The Default layout that everything is using
                 
                 
                 
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="openSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-search"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </nav>
+
+<section class="breadcrumb-section green-version">
+    <div class="container breadcrumb-container">
+        <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+            <ul>
+            
+            <li><a href="/">INTIA</a></li>
+            
+                
+                    <li><a >Über</a></li>
+                
+                
+                <li><a href="#">Netzwerk</a></li>
+                
+            
+            </ul>
+        </nav>
+    </div>
+</section>
+
+
+  <!-- Script pointing to search-script.js -->
+  <script src="/assets/js/search.js" type="text/javascript"></script>
+  
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a class="search-item" href="{url}">{title}</a></li>'
+  })
+  </script>
         <div class="arrow-image is-pulled-left is-hidden-mobile">
             <img id="scroll-up" src="/assets/img/arrow-down.png" alt="placeholder">
             <img id="scroll-down" src="/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
         </div>
         
-            <section class="hero is-primary is-hidden-print  is-medium   subpage " >
+            <section class="hero is-primary is-hidden-print  is-medium   toppage " >
     <div class="hero-body">
         <div class="container">
             
                 <h1 class="overtitle subtitle is-4">Über</h1>
             
             <h1 class="title is-1   title-with-overtitle ">Netzwerk</h1>
-            
-                <img src="/assets/img/about/network.jpg" alt="placeholder"  class="is-rounded is-hidden-mobile">
             
             
                 <p class="subtitle is-4">Die Plattform INTIA unterstützt den Aufbau eines Netzwerks mit Interesse an digitalen und technischen Alltagshilfen. Schon dabei sind: das INTIA-Projektteam, der Fachbeirat des Projekts und seine Praxispartner. Alle verbindet der Wunsch, sich untereinander und mit Fachkräften der Sozialen Arbeit und den beteiligten Wissenschaftler:innen auszutauschen und ein Netzwerk zu bilden. Gemeinsam kann das Netzwerk wachsen.
@@ -224,25 +285,56 @@ The Default layout that everything is using
             <div class="columns is-centered">
                 <div id="content" class="container column is-10-desktop is-12-tablet">
                     
-                    <div class="highlighter">
-<h1 id="projektteam">Projektteam</h1>
-<p>Das INTIA-Projektteam besteht aus ungefähr zehn Personen aus unterschiedlichen Fachdisziplinen. Die Professor:innen sind: Prof. Dr. lsabel Zorn (Fakultät für Angewandte Sozialwissenschaften, Schwerpunkte Digitale Medienbildung in der Sozialen Arbeit), Prof. Dr. Stefan Bente (Fakultät für lnformatik und lngenieurwissenschaften, Schwerpunkt Softwaretechnik), Prof. Birgit Mager (Fakultät für Kulturwissenschaften, Köln lnternational School of Design KISD, Schwerpunkt Service Design) und Prof. Dr. Christian Kohls (Fakultät for lnformatik und lngenieurwissenschaften, Schwerpunkt Soziotechnische Systeme). Hinzu kommen wissenschaftliche Mitarbeiter:innen aus allen vier wissenschaftlichen Disziplinen. Sie heißen Hanna Thielmann, Carola Janda und Caroline Kortekaas (Fakultät für Angewandte Sozialwissenschaften), Marc Schmidt, Dennis Wilk und Jan Seidler (Fakultät für lnformatik und lngenieurwissenschaften) sowie Janina Rösch (Köln lnternational School of Design KISD). Unterstützt werden alle von den Hilfskräften Miriam Hafki und Johannes Jülich (Fakultät für Angewandte Sozialwissenschaften) und Duane Maurer (Köln lnternational School of Design KISD).</p>
+                    <h1 id="intia-erleben">INTIA erleben</h1>
+<p>Text Text Text</p>
+<div class='columns'>
+<div class='column is-one-third has-text-centered'>
+  <figure class='image '>
+    <img style="width: 50%; padding: 1rem; text-align: center; margin-left: auto; margin-right: auto; display: block; object-fit: scale-down;" class='with-zone green_bg is-round' src='/assets/img/about/network/Austauschkanal.SVG'>
+  </figure>
+      <h3>Austauschkanal</h3>
+      Austausch über das INTIA Material und persönliche Fragen im <strong>Austauschkanal</strong>
+</div>
+<div class='column is-one-third has-text-centered'>
+  <figure class='image'>
+    <img style="width: 50%; padding: 1rem; text-align: center; margin-left: auto; margin-right: auto; display: block; object-fit: scale-down;" class='with-zone green_bg is-round' src='/assets/img/about/network/Makerspace.SVG'>
+  </figure>
+      <h3>Makerspace</h3>
+      Bestandteile des INTIA-Koffers individualisieren und selbst produzieren im <strong>Maker Space Bonn</strong>
+</div>
+<div class='column is-one-third has-text-centered'>
+  <figure class='image'>
+    <img style="width: 50%; padding: 1rem; text-align: center; margin-left: auto; margin-right: auto; display: block; object-fit: scale-down;" class='with-zone green_bg is-round' src='/assets/img/about/network/Videos.SVG'>
+  </figure>
+      <h3>Videos</h3>
+      Mehr über die INTIA-Produkte und ihre Nutzung lernen in den <strong>Fortbildungsvideos</strong>
+</div>
 </div>
 <div class="highlighter">
-<h1 id="fachbeirat">Fachbeirat</h1>
-<p>Der Fachbeirat hat die Aufgabe, das Forschungsprojekt mit der Expertise seiner Mitglieder zu unterstützen und zu beraten. Zum Fachbeirat gehören Dr. Tom Bieling (HAW Hamburg), Prof. Dr. Ingo Bosse (Selfmade, TU Dortmund), Dr. Julius Deutsch (Kommhelp e.V.), Fabian Hesterberg (Institut für Inklusive Bildung NRW), Prof. Dr. Heidi Schelhowe † (FabLab Uni Bremen), Gerhard Seiler (Think Tank iRights.Lab) und Bernhard Spelten (PIKSL).</p>
+<h2 id="abschlusstagung">Abschlusstagung</h2>
+<div class='columns'>
+<div class='column is-one-third has-text-centered'>
+  <figure class='image'>
+    <img class='with-zone' src='/assets/img/about/network/Veranstaltungen.SVG'>
+  </figure>
+     Do, 09.06.2022<br>
+     09:00 bis 12:30 Uhr
 </div>
+<div class='column is-two-third has-text-centered'>
+  text text text
+</div>
+</div>
+</div>
+<h1 id="im-netzwerk-schon-dabei">Im Netzwerk schon dabei</h1>
 <div class="highlighter">
-<h1 id="praxispartner">Praxispartner</h1>
-<p>Das Forschungsprojekt INTIA hat drei Wissenschaftspraxispartnerschaften (kurz WPKs), die von Anfang an dabei sind. Es sind die Diakonie Michaelshoven, die Evangelische Jugendhilfe Godesheim und die Fachstelle für Jugendmedienkultur (FJMK). In den Einrichtungen dieser Partner konnten Praxiseinsätze durchgeführt und gemeinsam an Forschungsfragen gearbeitet werden.</p>
 <div class="columns">       
   <div class="column is-4 is-round is-centered">
-    <img src="/assets/img/logos/diakonie_michaelshoven.png" alt="placeholder" class="">
+    <img style="object-fit: scale-down;" src="/assets/img/about/network/intra-Logo.png" alt="placeholder" class="">
   </div>
 <div class="column">
-<h2 id="diakonie-michaelshoven">Diakonie Michaelshoven</h2>
+<h2 id="intra-bonn">intra Bonn</h2>
 <p>Seit 70 Jahren gibt es die Diakonie Michaelshoven. Sie setzt sich für soziale Belange ein. In über 200 Einrichtungen begleiten, fördern und betreuen die Mitarbeiter:innen viele Menschen</p>
-  <a href="https://www.diakonie-michaelshoven.de/" class="button is-rounded is-dark">
+  <a href="https://www.bonn.de/themen-entdecken/soziales-gesellschaft/intraggmbh.php" class="button is-rounded is-dark">
       <span>Website</span>
       <span class="icon is-small">
         <i class="fas fa-external-link-alt fa-xs"></i>
@@ -253,12 +345,12 @@ The Default layout that everything is using
   </div>
   <div class="columns">       
   <div class="column is-4 is-round is-centered">
-    <img src="/assets/img/logos/ev_jugendhilfe_godesheim.png" alt="placeholder" class="">
+    <img style="object-fit: scale-down;" src="/assets/img/about/network/PIKSL-Logo.png" alt="placeholder" class="">
   </div>
 <div class="column">
-<h2 id="evangelische-jugendhilfe-godesheim">Evangelische Jugendhilfe Godesheim</h2>
+<h2 id="piksl-kln">PIKSL Köln</h2>
 <p>Die Evangelischen Jugendhilfe Godesheim ist ein Jugendhilfeverbund. Sie ist in dem Bereich der Kinder-, Jugend-, Behinderten- und Gesundheitshilfe tätig.</p>
-  <a href="https://www.godesheim.de/" class="button is-rounded is-dark">
+  <a href="https://piksl.net/ed/standorte/koeln/" class="button is-rounded is-dark">
       <span>Website</span>
       <span class="icon is-small">
         <i class="fas fa-external-link-alt fa-xs"></i>
@@ -269,12 +361,12 @@ The Default layout that everything is using
   </div>
   <div class="columns">       
   <div class="column is-4 is-round is-centered">
-    <img src="/assets/img/logos/fjmk.png" alt="placeholder" class="">
+    <img src="/assets/img/about/network/IBB_Logo.jpg" alt="placeholder" class="">
   </div>
 <div class="column">
-<h2 id="fachstelle-fr-jugendmedienkultur-fjmk">Fachstelle für Jugendmedienkultur (FJMK)</h2>
+<h2 id="institut-fr-inklusive-bildung">Institut für Inklusive Bildung</h2>
 <p>Die Fachstelle für Jugendmedienkultur NRW unterstützt Bildungseinrichtungen und Institutionen. Die FJMK hilft bei der Gestaltung der medienpädagogischen Arbeit.</p>
-  <a href="https://www.jugendmedienkultur-nrw.de/" class="button is-rounded is-dark">
+  <a href="https://nrw.inklusive-bildung.org/de/startseite-1" class="button is-rounded is-dark">
       <span>Website</span>
       <span class="icon is-small">
         <i class="fas fa-external-link-alt fa-xs"></i>
@@ -322,10 +414,6 @@ The Default layout that everything is using
                             
                             <div class="">
                                 <a href="/about/project/" class="link">Projekt</a>
-                            </div>
-                            
-                            <div class="">
-                                <a href="/about/network/" class="link">Netzwerk</a>
                             </div>
                             
                             <div class="">

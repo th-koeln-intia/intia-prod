@@ -20,23 +20,28 @@ The Default layout that everything is using
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://methods.intia.de/src/radar/radar.js"></script>
+        <link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />
+    
+    
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Über den INTIA-Koffer | INTIA</title>
+<title>Was ist der INTIA-Koffer? | INTIA</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Über den INTIA-Koffer" />
+<meta property="og:title" content="Was ist der INTIA-Koffer?" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A plattform for methods, techniques, toolkits and patterns for participative development in a social context." />
 <meta property="og:description" content="A plattform for methods, techniques, toolkits and patterns for participative development in a social context." />
-<link rel="canonical" href="/intia-case_old/" />
-<meta property="og:url" content="/intia-case_old/" />
+<link rel="canonical" href="/pages/case/intia-case%20copy.html" />
+<meta property="og:url" content="/pages/case/intia-case%20copy.html" />
 <meta property="og:site_name" content="INTIA" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Über den INTIA-Koffer" />
+<meta property="twitter:title" content="Was ist der INTIA-Koffer?" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A plattform for methods, techniques, toolkits and patterns for participative development in a social context.","headline":"Über den INTIA-Koffer","url":"/intia-case_old/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"A plattform for methods, techniques, toolkits and patterns for participative development in a social context.","headline":"Was ist der INTIA-Koffer?","url":"/pages/case/intia-case%20copy.html"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- head scripts -->
 <script src="https://unpkg.com/@botpoison/browser"></script>
@@ -57,12 +62,31 @@ The Default layout that everything is using
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end buttons">
+            <div id="SearchOverlay" class="searchbar-overlay navbar-end buttons">
+                <div class="navbar-item searchbar">
+                    <div class="field">
+                        <div id="search-container" class="control">
+                          <input class="input search-input" type="text" id="search-input" placeholder="Suchbegriff eintippen">
+                        </div>
+                    </div>
+                    <ul id="results-container" class="search-result-list"></ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="closeSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-remove"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+            <div id="navmenu" class="navbar-end buttons">
                 
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable          ">
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
                     
                     
                      <a for="navbar-click" class="navbar-link">Über</a>
@@ -74,9 +98,6 @@ The Default layout that everything is using
                         
                         <a href="/about/project/"
                             class="navbar-item button is-rounded is-dark  ">Projekt</a>
-                        
-                        <a href="/about/network/"
-                            class="navbar-item button is-rounded is-dark  ">Netzwerk</a>
                         
                         <a href="/about/accessibility/"
                             class="navbar-item button is-rounded is-dark  ">Barrierearm</a>
@@ -175,26 +196,64 @@ The Default layout that everything is using
                 
                 
                 
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="openSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-search"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </nav>
+
+<section class="breadcrumb-section green-version">
+    <div class="container breadcrumb-container">
+        <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+            <ul>
+            
+            <li><a href="/">INTIA</a></li>
+            
+                
+                
+                
+                <li><a href="#">Was ist der INTIA-Koffer?</a></li>
+                
+            
+            </ul>
+        </nav>
+    </div>
+</section>
+
+
+  <!-- Script pointing to search-script.js -->
+  <script src="/assets/js/search.js" type="text/javascript"></script>
+  
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a class="search-item" href="{url}">{title}</a></li>'
+  })
+  </script>
         <div class="arrow-image is-pulled-left is-hidden-mobile">
             <img id="scroll-up" src="/assets/img/arrow-down.png" alt="placeholder">
             <img id="scroll-down" src="/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
         </div>
         
-            <section class="hero is-primary is-hidden-print  is-medium   subpage " >
+            <section class="hero is-primary is-hidden-print  is-medium  " >
     <div class="hero-body">
         <div class="container">
             
-                <h1 class="overtitle subtitle is-4">INTIA-KOFFER</h1>
-            
-            <h1 class="title is-1   title-with-overtitle ">Über den INTIA-Koffer</h1>
+            <h1 class="title is-1  ">Was ist der INTIA-Koffer?</h1>
             
             
-                <p class="subtitle is-4">Der INTIA-Koffer setzt sich aus verschiedenen Bausteinen zusammen. Damit kann jede:r eigene Lösungen entwickeln. Der Koffer lädt dazu ein, spielerisch Technik kennenzulernen. So kann Technik selbst verstanden und genutzt werden.
-</p>
+                <p class="subtitle is-4"></p>
             
             
             <div class="buttons-hero has-text-centered">
@@ -420,10 +479,6 @@ The Default layout that everything is using
                             
                             <div class="">
                                 <a href="/about/project/" class="link">Projekt</a>
-                            </div>
-                            
-                            <div class="">
-                                <a href="/about/network/" class="link">Netzwerk</a>
                             </div>
                             
                             <div class="">

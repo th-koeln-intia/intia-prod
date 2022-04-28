@@ -20,6 +20,11 @@ The Default layout that everything is using
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://methods.intia.de/src/radar/radar.js"></script>
+        <link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />
+    
+    
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -57,12 +62,31 @@ The Default layout that everything is using
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end buttons">
+            <div id="SearchOverlay" class="searchbar-overlay navbar-end buttons">
+                <div class="navbar-item searchbar">
+                    <div class="field">
+                        <div id="search-container" class="control">
+                          <input class="input search-input" type="text" id="search-input" placeholder="Suchbegriff eintippen">
+                        </div>
+                    </div>
+                    <ul id="results-container" class="search-result-list"></ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="closeSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-remove"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+            <div id="navmenu" class="navbar-end buttons">
                 
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable          ">
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
                     
                     
                      <a for="navbar-click" class="navbar-link">Über</a>
@@ -74,9 +98,6 @@ The Default layout that everything is using
                         
                         <a href="/about/project/"
                             class="navbar-item button is-rounded is-dark  ">Projekt</a>
-                        
-                        <a href="/about/network/"
-                            class="navbar-item button is-rounded is-dark  ">Netzwerk</a>
                         
                         <a href="/about/accessibility/"
                             class="navbar-item button is-rounded is-dark  ">Barrierearm</a>
@@ -175,10 +196,56 @@ The Default layout that everything is using
                 
                 
                 
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="openSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-search"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </nav>
+
+<section class="breadcrumb-section green-version">
+    <div class="container breadcrumb-container">
+        <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+            <ul>
+            
+            <li><a href="/">INTIA</a></li>
+            
+                 
+                    
+                        <li><a>Wissen</a></li>
+                    
+                        <li><a>Anleitungen</a></li>
+                    
+                
+                
+                <li><a href="#">Anleitung Mini-Computer installieren</a></li>
+                
+            
+            </ul>
+        </nav>
+    </div>
+</section>
+
+
+  <!-- Script pointing to search-script.js -->
+  <script src="/assets/js/search.js" type="text/javascript"></script>
+  
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a class="search-item" href="{url}">{title}</a></li>'
+  })
+  </script>
         <div class="arrow-image is-pulled-left is-hidden-mobile">
             <img id="scroll-up" src="/assets/img/arrow-down.png" alt="placeholder">
             <img id="scroll-down" src="/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
@@ -188,14 +255,14 @@ The Default layout that everything is using
     <div class="hero-body">
         <div class="container">
             
-                <h1 class="overtitle subtitle is-4">WISSEN</h1>
+                <h1 class="overtitle subtitle is-4">Anleitungen</h1>
             
             <h1 class="title is-1   title-with-overtitle ">Anleitung Mini-Computer installieren</h1>
             
                 <img src="/assets/img/uploads/dsc_0060.jpg" alt="placeholder"  class="is-rounded is-hidden-mobile">
             
             
-                <p class="subtitle is-4">sdfv</p>
+                <p class="subtitle is-4">Bevor es mit der Erstinbetriebnahme des INTIA-Koffers losgehen kann, muss der Mini-Computer installiert werden. Dazu findest du hier die Anleitung.</p>
             
             
             <div class="buttons-hero has-text-centered">
@@ -224,8 +291,7 @@ The Default layout that everything is using
                 <div id="content" class="container column is-10-desktop is-12-tablet">
                     
                     <!--StartFragment-->
-<p>Bevor es mit der Erstinbetriebnahme des INTIA-Koffers losgehen kann, muss der Mini-Computer installiert werden. Dazu findest du hier die Anleitung.</p>
-<h1 id="vorbereitung">Vorbereitung </h1>
+<h2 id="vorbereitung">Vorbereitung </h2>
 <p>Benötigt wird</p>
 <ul>
 <li>Raspberry als Mini-Computer</li>
@@ -234,7 +300,7 @@ The Default layout that everything is using
 <li>Micro SD-Karte (mindestens 16GB; 32GB oder mehr wird empfohlen, da hiermit ein Sprachassistenten-Upgrade einfacher wird)</li>
 <li>Netzteil für Raspberry</li>
 </ul>
-<h1 id="installation">Installation </h1>
+<h2 id="installation">Installation </h2>
 <p>Das Betriebssystem wird auf den Raspberry geschrieben. Hier muss nicht viel beachtet werden. Mit einem kleinen Programm wird eine Datei auf die SD-Karte geschrieben. NICHT die Datei auf die SD-Karte kopieren, das funktioniert nicht. In dem Prozess wird die SD-Karte formatiert (alle Daten auf der SD-Karte werden gelöscht). Also bitte beachten, dass nichts auf der SD-Karte ist, was wichtig ist!</p>
 <ul>
 <li>SD-Karten Image herunterladen (link!)</li>
@@ -247,7 +313,7 @@ The Default layout that everything is using
 <li>Warten, bis es fertig ist</li>
 <li>SD-Karte in den Raspberry</li>
 </ul>
-<h1 id="optional-aber-empfohlen-case-und-display-zusammensetzen">Optional aber empfohlen: Case und Display zusammensetzen </h1>
+<h2 id="optional-aber-empfohlen-case-und-display-zusammensetzen">Optional aber empfohlen: Case und Display zusammensetzen </h2>
 <p>Der Mini-Computer läuft auch ohne Display und Gehäuse, also einer Plastikschale, die das Gerät schützt. Dennoch ist es empfehlenswert, das Gerät mit einem Case, einem Gehäuse oder einer Schale zu schützen. Das Gerät ist aber sehr stabil und daher das Risiko gering, das etwas kaputt geht, wenn kein Gehäuse drum ist. Wenn es also passiert, dass der Raspberry bereits da ist aber noch kein Case fertig ist, kann man ohne Sorge bereits die Installation durchführen und jeder Zeit die nachfolgenden Schritte nachholen.</p>
 <ul>
 <li>Display anschließen wie auf dem Bild mit Jumper-Kabel</li>
@@ -260,42 +326,6 @@ The Default layout that everything is using
 <li>Fertig</li>
 </ul>
 <p>Jetzt kann es mit der Erstinbetriebnahme weitergehen.</p>
-<h1 id="section">_____________________________________________________________________________</h1>
-<h1 id="vorbereitung-1">Vorbereitung</h1>
-<p>Benötigt wird</p>
-<ul>
-<li>Raspberry als Mini-Computer</li>
-<li>(opt) Raspberry Case</li>
-<li>(opt) OLED-Display für den Raspberry (AZDelivery 0,96 Zoll OLED Display I2C SSD1306 Chip 128 x 64 oder größer) - Jumper-Kabel werden empfohlen Weiblich-Weiblich</li>
-<li>Micro SD-Karte (min 16GB - 32+ wird empfohlen da hiermit ein Sprach Assistentent Upgrade einfacher wird!)</li>
-<li>Netzteil für Raspberry</li>
-</ul>
-<h1 id="installation-1">Installation</h1>
-<p>Das Betriebssystem wird auf den Raspberry geschrieben. Hier muss nicht viel beachtet werden. Mit einem kleinen Programm wird eine Datei auf die SD-Karte geschrieben. NICHT die Datei auf die SD-Karte kopieren, das funktioniert nicht. In dem Prozess wird die SD-Karte Fomatiert (alle daten auf der SD-Karte werden gelöscht). Also bitte beachten das nichts drauf ist das wichtig ist!</p>
-<ul>
-<li>Sd-Karten Image herunter laden (link!)</li>
-<li>SD-Karte in einen Computer</li>
-<li>Unter Windows die Software Etcher Installieren und Ausführen: <a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a></li>
-<li><img src="https://wiki.th-koeln.de/download/attachments/27691881/image2022-1-14_13-44-25.png?version=1&amp;modificationDate=1642418237042&amp;api=v2" alt="" /></li>
-<li>Select Image - Die IMG-Datei auswählen die zuvor von uns heruntergeladen wurde</li>
-<li>Select drive - Die SD-Karte auswählen</li>
-<li>Flash!</li>
-<li>Warten bis es fertig ist</li>
-<li>SD-Karte in den Raspberry</li>
-</ul>
-<h1 id="opt-aber-empfohlen-case-und-display-zusammen-setzen">(opt aber empfohlen) Case und Display zusammen setzen</h1>
-<p>Der Mini-Computer läuft auch ohne Display und Gehäuse (plastikschale die das gerät schützt). Dennoch ist es Empfehlenswert das gerät mit einem Case/Gehäuse/Schale zu schützen. Das Gerät ist aber sehr Stabil und das Risiko gering das etwas kaputt geht wenn mal kein Gehäuse drum ist. Wenn es also passiert das der raspberry bereits da ist aber noch kein Case fertig ist kann man ohne sorge bereits die Installation durchführen und jeder zeit die nachfolgenden schritte nachholen.</p>
-<ul>
-<li>Display anschließen wie auf dem Bild mit Jumper-Kabel</li>
-<li><img src="https://m.media-amazon.com/images/I/611iVBH-XFS._SL1500_.jpg" alt="" /></li>
-<li>Wenn im Case keine Lücke ist für das Display kann dieses nach belieben raus gelöst werden (keine angst!) - Unser 3D-Druck Case vorlage hat lücke (Datei muss noch erstellt und hochgeladen werden!!!!)</li>
-<li>Display an dem Case befestigen</li>
-<li>Raspberry in Case</li>
-<li>Zusammen stecken und zu machen</li>
-<li>Fertig</li>
-</ul>
-<p>Weiter mit Erstinbetriebnahme</p>
-<p><a href="https://wiki.th-koeln.de/display/INTIA/Anleitung+Mini-Computer+installieren">Gefällt mir</a>Sei der Erste, dem dies gefällt.</p>
 <!--EndFragment-->
 
                 </div>
@@ -335,10 +365,6 @@ The Default layout that everything is using
                             
                             <div class="">
                                 <a href="/about/project/" class="link">Projekt</a>
-                            </div>
-                            
-                            <div class="">
-                                <a href="/about/network/" class="link">Netzwerk</a>
                             </div>
                             
                             <div class="">

@@ -20,6 +20,11 @@ The Default layout that everything is using
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://methods.intia.de/src/radar/radar.js"></script>
+        <link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />
+    
+    
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
@@ -57,12 +62,31 @@ The Default layout that everything is using
             </a>
         </div>
         <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
-            <div class="navbar-end buttons">
+            <div id="SearchOverlay" class="searchbar-overlay navbar-end buttons">
+                <div class="navbar-item searchbar">
+                    <div class="field">
+                        <div id="search-container" class="control">
+                          <input class="input search-input" type="text" id="search-input" placeholder="Suchbegriff eintippen">
+                        </div>
+                    </div>
+                    <ul id="results-container" class="search-result-list"></ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="closeSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-remove"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
+            </div>
+            <div id="navmenu" class="navbar-end buttons">
                 
                 
                 
                 <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable          ">
+                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
                     
                     
                      <a for="navbar-click" class="navbar-link">Über</a>
@@ -74,9 +98,6 @@ The Default layout that everything is using
                         
                         <a href="/about/project/"
                             class="navbar-item button is-rounded is-dark  ">Projekt</a>
-                        
-                        <a href="/about/network/"
-                            class="navbar-item button is-rounded is-dark  ">Netzwerk</a>
                         
                         <a href="/about/accessibility/"
                             class="navbar-item button is-rounded is-dark  ">Barrierearm</a>
@@ -175,25 +196,67 @@ The Default layout that everything is using
                 
                 
                 
+                <div class="navbar-end">
+                    <div class="navbar-item navbar-search">
+                        <a id="openSearch">
+                            <span class="icon">
+                                <i class="fa-solid icon-search"></i>
+                            </span>
+                        </a>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </nav>
+
+<section class="breadcrumb-section green-version">
+    <div class="container breadcrumb-container">
+        <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+            <ul>
+            
+            <li><a href="/">INTIA</a></li>
+            
+                
+                    <li><a >INTIA-Koffer</a></li>
+                
+                
+                <li><a href="#">Kaufen</a></li>
+                
+            
+            </ul>
+        </nav>
+    </div>
+</section>
+
+
+  <!-- Script pointing to search-script.js -->
+  <script src="/assets/js/search.js" type="text/javascript"></script>
+  
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a class="search-item" href="{url}">{title}</a></li>'
+  })
+  </script>
         <div class="arrow-image is-pulled-left is-hidden-mobile">
             <img id="scroll-up" src="/assets/img/arrow-down.png" alt="placeholder">
             <img id="scroll-down" src="/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
         </div>
         
-            <section class="hero is-primary is-hidden-print  is-medium   subpage " >
+            <section class="hero is-primary is-hidden-print  is-medium   toppage " >
     <div class="hero-body">
         <div class="container">
             
-                <h1 class="overtitle subtitle is-4">INTIA-KOFFER</h1>
+                <h1 class="overtitle subtitle is-4">INTIA-Koffer</h1>
             
             <h1 class="title is-1   title-with-overtitle ">Kaufen</h1>
             
             
-                <p class="subtitle is-4">Wie kommt man an einen INTIA-Koffer und wie stellt man diesen zusammen? Diese Fragen werden hier beantwortet. 
+                <p class="subtitle is-4">Wie kommt man an einen INTIA-Koffer und wie stellt man diesen zusammen? Diese Fragen werden hier beantwortet.
 </p>
             
             
@@ -234,32 +297,32 @@ The Default layout that everything is using
         <th>Preis</th>
     </tr>
     <tr>
-        <td>INTIA-Koffer</td>
+        <td><strong>INTIA-Koffer</strong></td>
         <td>Der Mini-Computer, eine Auswahl einfacher Bausteine und alle analogen Materialien.<br /> 
         <td>~ 350 €</td>
     </tr>
     <tr>
-        <td>INTIA-Erweiterung: Knopf-Set</td>
+        <td>INTIA-Erweiterung: <strong>Knopf-Set</strong></td>
         <td>Eine Auswahl verschiedener Knöpfe, Schalter und Fernbedienungen.</td>
         <td>~ 100 €</td>
     </tr>
     <tr>
-        <td>INTIA-Erweiterung: Sensor-Set</td>
+        <td>INTIA-Erweiterung: <strong>Sensor-Set</strong></td>
         <td>Eine Auswahl verschiedener Sensoren. Bewegungsmelder, Türkontakte, Temperatursensoren und mehr.</td>
         <td>~ 125 €</td>
     </tr>
     <tr>
-        <td>INTIA-Erweiterung: Sprachassistenz-Set</td>
+        <td>INTIA-Erweiterung: <strong>Sprachassistenz-Set</strong></td>
         <td>Der Mini-Computer kann hiermit zu einem Sprachassistenten umgerüstet werden.</td>
         <td>~ 65 €</td>
     </tr>
     <tr>
-        <td>INTIA-Methodensammlung</td>
+        <td><strong>INTIA-Methodensammlung</strong></td>
         <td>Alle analogen Materialien im hochwertigen Druck (ohne Bausteine). Ideal für Selbst-Bastler, MakerSpaces, Kreativ-Räume und Innovations-Labore!</td>
         <td>~ 65 €</td>
     </tr>
     <tr>
-        <td>INTIA als Laborraum ausstatten</td>
+        <td><strong>INTIA als Laborraum ausstatten</strong></td>
         <td>Alles aus dem INTIA-Baukasten und der INTIA-Methodensammlung, um einen Raum als Laborraum auszustatten. Der Umfang und der Preis hängen davon ab, was du             brauchst oder möchtest.</td>
         <td> ab 1.400 €</td>
     </tr>
@@ -271,8 +334,8 @@ The Default layout that everything is using
 <a href="https://www.meinonlinewunschzettel.de/?wz=dd67ce857592ad4" class="button is-rounded is-dark">
 <span> Zur Einkaufsliste auf "Mein Online Wunschzettel" </span>
 <span class="icon is-small">
-<i class="fas fa-chevron-right fa-xs"></i>
-</span> 
+    <i class="fas fa-chevron-right fa-xs"></i>
+    </span> 
 </a>
 <div class="highlighter     ">  
 <h3 id="detaillierter-auflistung">Detaillierter Auflistung</h3>
@@ -280,8 +343,8 @@ The Default layout that everything is using
 <a href="/assets/files/einkaufsliste.xlsx" class="button is-rounded is-dark">
 <span> Excel-Einkaufsliste herunterladen </span>
 <span class="icon is-small">
-<i class="fas fa-chevron-right fa-xs"></i>
-</span> 
+    <i class="fas fa-chevron-right fa-xs"></i>
+    </span> 
 </a>
 </div>
 <h3 id="dieeinkaufsliste-nutzen">Die Einkaufsliste nutzen</h3>
@@ -300,10 +363,10 @@ The Default layout that everything is using
 <h2 id="wenn-alles-da-ist-den-koffereinrumen">Wenn alles da ist: den Koffer einräumen</h2>
 <p>Sind alle Inhalte des INTIA-Koffers beisammen, kann es noch nicht sofort losgehen. Aber keine Sorge - es ist viel einfacher als es scheint und der Koffer ist bald einsatzbereit! So solltest du vorgehen:</p>
 <ul>
-<li>Zuerst die Innenausstattung des Koffers mit einer Schaumstoff-Einlage zurecht machen. Es soll ja später alles seine Ordnung haben. </li>
+<li>Zuerst die Innenausstattung des Koffers mit einer Schaumstoff-Einlage zurecht machen. Es soll ja später alles seine Ordnung haben.</li>
 <li>Die noch leere SD-Karte muss für den Mini-Computer mit Daten von unserer Plattform ausgestattet werden.</li>
 <li>Den Mini-Computer nun erstmalig einrichten.</li>
-<li>Nun den Mini-Computer aufrufen und alles für das Hinzufügen der smarten Geräte vorbereiten. </li>
+<li>Nun den Mini-Computer aufrufen und alles für das Hinzufügen der smarten Geräte vorbereiten.</li>
 <li>Alle smarten Technik-Elemente aus der Verpackung holen und vor den Koffer legen. Jedes Gerät nacheinander koppeln. Wenn eines fertig gekoppelt ist, kommt es in den Koffer. So kommst du nicht durcheinander.</li>
 <li>Jetzt in Node-RED die INTIA Nodes für das Escape Game hinzufügen.</li>
 <li>Am besten das Escape Game aufbauen und einmal spielen. Danach einen Funktionstest aller Teile machen.</li>
@@ -348,10 +411,6 @@ The Default layout that everything is using
                             
                             <div class="">
                                 <a href="/about/project/" class="link">Projekt</a>
-                            </div>
-                            
-                            <div class="">
-                                <a href="/about/network/" class="link">Netzwerk</a>
                             </div>
                             
                             <div class="">
