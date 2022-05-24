@@ -4,10 +4,11 @@ const carousels = bulmaCarousel.attach('.carousel',{
     slidesToScroll: 1,
     slidesToShow: 1,
     icons: {
-        'previous': `<img src="../assets/img/arrow-left.png"></img>`,
-        'next': `<img src="../assets/img/arrow-left.png" style="transform: rotate(180deg);"></img>`}
+        'previous': `<img src="../assets/img/icons/arrow-left.svg"></img>`,
+        'next': `<img src="../assets/img/icons/arrow-left.svg" style="transform: rotate(180deg);"></img>`}
 });
 
+// Scrollarrows
 var scrollUpArrow= document.getElementById("scroll-up");
 var scrollDownArrow= document.getElementById("scroll-down");
 var scrollStep=10,
@@ -49,6 +50,7 @@ window.onscroll = function(ev) {
     }
 };
 
+// Searchbar
 document.getElementById("openSearch").addEventListener("click", openSearch);
 document.getElementById("closeSearch").addEventListener("click", closeSearch);
 document.getElementById("search-input").addEventListener("input", showsearchresults);
@@ -80,3 +82,69 @@ function showsearchresults(e) {
         searchInput.style.borderBottomRightRadius = "45px";
     }
 }
+
+// Simple storage for site wide changes
+var siteData
+window.addEventListener('load', (event) => {
+    init()
+});
+// Triggered on load of body element
+function init() {
+    loadFromStorage()
+    if (siteData == null) {
+        setDefaultData()
+    }
+}
+
+// Default data when no data is found
+function setDefaultData() {
+    updateSiteData(null, 1.2)
+}
+function updateSiteData(newSiteData, newFontSize = 1.2) {
+    console.log("update " + newSiteData + " fontsize: " +newFontSize )
+    if (newSiteData == null) {
+        siteData = {
+            fontSize: newFontSize
+        }
+    } else {
+        siteData = newSiteData
+    }
+    saveToStorage()
+    updateSite()
+}
+function saveToStorage(){
+    localStorage.setItem("intiaSiteData", JSON.stringify(siteData))
+}
+function loadFromStorage() {
+    var data = JSON.parse(localStorage.getItem("intiaSiteData"))
+    loadFromJson(data)
+}
+function loadFromJson(jsonString){
+    if (jsonString !== null) {
+        updateSiteData(jsonString)
+    }
+}
+
+// Trigger update for all elements that are based on site wide data
+function updateSite() {
+    updateFontSize()
+}
+
+// Font size
+var html=document.querySelector('html');
+var logo = document.getElementById("navbar-logo");
+function updateFontSize() {
+    html.style.fontSize=siteData.fontSize+"rem";
+    if(siteData.fontSize == 1.2){
+        logo.src = "/assets/img/logo-horizontal-short.png";
+    }else{
+        logo.src = "/assets/img/logo-short.png";
+    }
+}
+
+// Change font size Button
+document.getElementById("changeFontsize").addEventListener("click", changeFontSize);
+function changeFontSize() {
+    console.log("Fontsize changed "+ (siteData.fontSize == 1.2) ? 1.5 : 1.2)
+    updateSiteData(null, (siteData.fontSize == 1.2) ? 1.5 : 1.2)
+  }

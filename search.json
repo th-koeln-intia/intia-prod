@@ -4,7 +4,7 @@
       "title"    : "Ergebnistagung des Projektes INTIA am 09. Juni ",
       "category" : "",
       "tags"     : "",
-      "url"      : "/stories/ergebnistagung-des-projektes-intia-am-09-juni/",
+      "url"      : "/blog/ergebnistagung-des-projektes-intia-am-09-juni/",
       "date"     : "2022-04-28 00:00:00 +0000"
     } ,
   
@@ -12,7 +12,7 @@
       "title"    : "Modularität",
       "category" : "",
       "tags"     : "",
-      "url"      : "/stories/modularitaet/",
+      "url"      : "/blog/modularitaet/",
       "date"     : "2022-03-30 00:00:00 +0000"
     } ,
   
@@ -20,7 +20,7 @@
       "title"    : "Escape Game als leichter Einstieg für den INTIA-Koffer ",
       "category" : "",
       "tags"     : "",
-      "url"      : "/stories/escape-game-als-leichter-einstieg-fuer-den-intia-koffer/",
+      "url"      : "/blog/escape-game-als-leichter-einstieg-fuer-den-intia-koffer/",
       "date"     : "2022-02-15 00:00:00 +0000"
     } ,
   
@@ -28,7 +28,7 @@
       "title"    : "INTIA Escape Game geschafft",
       "category" : "",
       "tags"     : "",
-      "url"      : "/stories/intia-escape-game-geschafft-intia-koffer-testen-im-piksl-labor-koeln/",
+      "url"      : "/blog/intia-escape-game-geschafft-intia-koffer-testen-im-piksl-labor-koeln/",
       "date"     : "2022-01-12 00:00:00 +0000"
     } ,
   
@@ -36,7 +36,7 @@
       "title"    : "Die Plattform INTIA ist online",
       "category" : "",
       "tags"     : "",
-      "url"      : "/stories/die-plattform-intia-ist-online/",
+      "url"      : "/blog/die-plattform-intia-ist-online/",
       "date"     : "2021-12-13 00:00:00 +0000"
     } ,
   
@@ -44,7 +44,7 @@
       "title"    : "Prototypen mit Jugendlichen entwickeln",
       "category" : "",
       "tags"     : "news, intia, prototyping, covid-19, inclusive, behaviour-driven",
-      "url"      : "/stories/inklusive-prototypenentwicklung/",
+      "url"      : "/blog/inklusive-prototypenentwicklung/",
       "date"     : "2021-04-06 00:00:00 +0000"
     } ,
   
@@ -52,7 +52,7 @@
       "title"    : "Forschung remote über Messenger",
       "category" : "",
       "tags"     : "news, intia, messenger, covid-19",
-      "url"      : "/stories/messenger/",
+      "url"      : "/blog/messenger/",
       "date"     : "2021-01-02 00:00:00 +0000"
     } ,
   
@@ -60,7 +60,7 @@
       "title"    : "Selbst forschen mit INTIA Probe Kits",
       "category" : "",
       "tags"     : "news, intia, probes",
-      "url"      : "/stories/probes/",
+      "url"      : "/blog/probes/",
       "date"     : "2020-10-01 00:00:00 +0000"
     } 
   
@@ -70,24 +70,24 @@
       "title"    : "Alltagsbewältigung",
       "category" : "",
       "tags"     : "",
-      "url"      : "/knowhow/glossary/alltagsbewaeltigung/",
-      "date"     : "2022-04-28 09:41:35 +0000"
+      "url"      : "/wissen/woerterbuch/alltagsbewaeltigung/",
+      "date"     : "2022-05-24 14:53:16 +0000"
     } ,
   
     {
       "title"    : "Partizipation",
       "category" : "",
       "tags"     : "",
-      "url"      : "/knowhow/glossary/partizipation/",
-      "date"     : "2022-04-28 09:41:35 +0000"
+      "url"      : "/wissen/woerterbuch/partizipation/",
+      "date"     : "2022-05-24 14:53:16 +0000"
     } ,
   
     {
       "title"    : "vulnerabel",
       "category" : "",
       "tags"     : "",
-      "url"      : "/knowhow/glossary/vulnerabel/",
-      "date"     : "2022-04-28 09:41:35 +0000"
+      "url"      : "/wissen/woerterbuch/vulnerabel/",
+      "date"     : "2022-05-24 14:53:16 +0000"
     } 
   
   ,
@@ -101,7 +101,7 @@
         "title"    : "Plattform",
         "category" : "",
         "tags"     : "",
-        "url"      : "/about/plattform",
+        "url"      : "/ueber/plattform",
         "date"     : ""
       
     } ,
@@ -111,7 +111,7 @@
         "title"    : "Barrierearm",
         "category" : "",
         "tags"     : "",
-        "url"      : "/about/accessibility/",
+        "url"      : "/ueber/barrierearm/",
         "date"     : ""
       
     } ,
@@ -121,7 +121,7 @@
         "title"    : "Anleitung der Erstinbetriebnahme des INTIA-Koffers",
         "category" : "",
         "tags"     : "",
-        "url"      : "/knowhow/instructions/first_use",
+        "url"      : "/wissen/anleitungen/erstbenutzung",
         "date"     : ""
       
     } ,
@@ -131,7 +131,17 @@
         "title"    : "Anleitung Mini-Computer installieren",
         "category" : "",
         "tags"     : "",
-        "url"      : "/knowhow/instructions/installation",
+        "url"      : "/wissen/anleitungen/installation",
+        "date"     : ""
+      
+    } ,
+  
+    {
+      
+        "title"    : "Anleitung zum Hinzufügen und Einrichten neuer Geräte",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/wissen/anleitungen/neue-geraete",
         "date"     : ""
       
     } ,
@@ -141,7 +151,17 @@
         "title"    : "Anleitung zum Packen des INTIA-Koffers",
         "category" : "",
         "tags"     : "",
-        "url"      : "/knowhow/instructions/how_to_pack",
+        "url"      : "/wissen/anleitungen/intia-koffer-packen",
+        "date"     : ""
+      
+    } ,
+  
+    {
+      
+        "title"    : "Blog",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/blog/",
         "date"     : ""
       
     } ,
@@ -151,7 +171,7 @@
         "title"    : "Bausteine",
         "category" : "",
         "tags"     : "",
-        "url"      : "/tools/building_blocks/",
+        "url"      : "/werkzeuge/bausteine/",
         "date"     : ""
       
     } ,
@@ -161,7 +181,7 @@
         "title"    : "Kaufen",
         "category" : "",
         "tags"     : "",
-        "url"      : "/intia-case/buy/",
+        "url"      : "/intia-koffer/kaufen/",
         "date"     : ""
       
     } ,
@@ -171,7 +191,7 @@
         "title"    : "Community",
         "category" : "",
         "tags"     : "",
-        "url"      : "/collaboration/community/",
+        "url"      : "/mitmachen/community/",
         "date"     : ""
       
     } ,
@@ -181,7 +201,7 @@
         "title"    : "Kontakt",
         "category" : "",
         "tags"     : "",
-        "url"      : "/collaboration/contact/",
+        "url"      : "/mitmachen/kontakt/",
         "date"     : ""
       
     } ,
@@ -191,7 +211,7 @@
         "title"    : "Häufig gestellte Fragen",
         "category" : "",
         "tags"     : "",
-        "url"      : "/intia-case/faq/",
+        "url"      : "/intia-koffer/faq/",
         "date"     : ""
       
     } ,
@@ -201,7 +221,7 @@
         "title"    : "Wörterbuch",
         "category" : "",
         "tags"     : "",
-        "url"      : "/knowhow/glossary/",
+        "url"      : "/wissen/woerterbuch/",
         "date"     : ""
       
     } ,
@@ -221,17 +241,7 @@
         "title"    : "Anleitungen",
         "category" : "",
         "tags"     : "",
-        "url"      : "/knowhow/instructions/",
-        "date"     : ""
-      
-    } ,
-  
-    {
-      
-        "title"    : "Was ist der INTIA-Koffer?",
-        "category" : "",
-        "tags"     : "",
-        "url"      : "/pages/case/intia-case%20copy.html",
+        "url"      : "/wissen/anleitungen/",
         "date"     : ""
       
     } ,
@@ -241,7 +251,7 @@
         "title"    : "Was steckt im INTIA-Koffer und was kostet er?",
         "category" : "",
         "tags"     : "",
-        "url"      : "/intia-case/content/",
+        "url"      : "/intia-koffer/inhalt/",
         "date"     : ""
       
     } ,
@@ -251,7 +261,7 @@
         "title"    : "Koffermaterial für den physischen INTIA-Koffer",
         "category" : "",
         "tags"     : "",
-        "url"      : "/intia-case/packaging/",
+        "url"      : "/intia-koffer/verpackung/",
         "date"     : ""
       
     } ,
@@ -261,7 +271,7 @@
         "title"    : "Über den INTIA-Koffer",
         "category" : "",
         "tags"     : "",
-        "url"      : "/intia-case/",
+        "url"      : "/intia-koffer/",
         "date"     : ""
       
     } ,
@@ -271,7 +281,7 @@
         "title"    : "Methoden",
         "category" : "",
         "tags"     : "",
-        "url"      : "/tools/methods/",
+        "url"      : "/werkzeuge/methoden/",
         "date"     : ""
       
     } ,
@@ -281,7 +291,7 @@
         "title"    : "Netzwerk",
         "category" : "",
         "tags"     : "",
-        "url"      : "/about/network/",
+        "url"      : "/mitmachen/netzwerk/",
         "date"     : ""
       
     } ,
@@ -291,32 +301,22 @@
         "title"    : "Projekt",
         "category" : "",
         "tags"     : "",
-        "url"      : "/about/project/",
+        "url"      : "/ueber/projekt/",
         "date"     : ""
       
     } ,
   
     {
       
-        "title"    : "Veröffentlichungen",
+        "title"    : "Publikationen",
         "category" : "",
         "tags"     : "",
-        "url"      : "/knowhow/publications/",
+        "url"      : "/wissen/publikationen/",
         "date"     : ""
       
     } ,
   
     {
-      
-    } ,
-  
-    {
-      
-        "title"    : "Neuigkeiten",
-        "category" : "",
-        "tags"     : "",
-        "url"      : "/stories/",
-        "date"     : ""
       
     } ,
   

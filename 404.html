@@ -16,13 +16,13 @@ The Default layout that everything is using
            href="/favicon.png" 
     />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
-    <link href="https://fonts.googleapis.com/css?family=Verdana" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     
         <script src="https://d3js.org/d3.v5.min.js"></script>
-        <script src="https://methods.intia.de/src/radar/radar.js"></script>
-        <link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />
+        <!--<script src="https://methods.intia.de/src/radar/radar.js"></script>-->
+        <script src="/assets/js/radar.js"></script>
+        <!--<link rel="stylesheet" href="https://methods.intia.de/src/radar/radar.css" />-->
     
     
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
@@ -52,10 +52,12 @@ The Default layout that everything is using
     <div class="container">
         <div class="navbar-brand">
             <a href="/" class="">
-                <img src="/assets/img/logo-black.png">
+                <picture>
+                    <source media="(max-width: 1300px)" srcset="/assets/img/logo-short.png">
+                    <img id="navbar-logo" src="/assets/img/logo-horizontal-short.png">
+                </source></picture>     
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu"
-                :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -85,118 +87,105 @@ The Default layout that everything is using
                 
                 
                 
-                <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
+                <div class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
                     
                     
                      <a for="navbar-click" class="navbar-link">Über</a>
                     
                     <div class="navbar-dropdown">
                         
-                        <a href="/about/plattform"
-                            class="navbar-item button is-rounded is-dark  ">Plattform</a>
+                        <a href="/ueber/plattform" class="navbar-item button is-rounded is-dark  ">Plattform</a>
                         
-                        <a href="/about/project/"
-                            class="navbar-item button is-rounded is-dark  ">Projekt</a>
+                        <a href="/ueber/projekt/" class="navbar-item button is-rounded is-dark  ">Projekt</a>
                         
-                        <a href="/about/accessibility/"
-                            class="navbar-item button is-rounded is-dark  ">Barrierearm</a>
+                        <a href="/ueber/barrierearm/" class="navbar-item button is-rounded is-dark  ">Barrierearm</a>
                         
                     </div>
                 </div>
                 
                 
                 
-                <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
+                <div class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable        ">
                     
                     
                      <a for="navbar-click" class="navbar-link">INTIA-Koffer</a>
                     
                     <div class="navbar-dropdown">
                         
-                        <a href="/intia-case/"
-                            class="navbar-item button is-rounded is-dark  ">Über</a>
+                        <a href="/intia-koffer/" class="navbar-item button is-rounded is-dark  ">Über</a>
                         
-                        <a href="/intia-case/buy/"
-                            class="navbar-item button is-rounded is-dark  ">Kaufen</a>
+                        <a href="/intia-koffer/kaufen/" class="navbar-item button is-rounded is-dark  ">Kaufen</a>
                         
-                        <a href="/intia-case/faq/"
-                            class="navbar-item button is-rounded is-dark  ">Häufige Fragen</a>
+                        <a href="/intia-koffer/faq/" class="navbar-item button is-rounded is-dark  ">Häufige Fragen</a>
                         
                     </div>
                 </div>
                 
                 
                 
-                <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
+                <div class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable      ">
                     
                     
                      <a for="navbar-click" class="navbar-link">Werkzeuge</a>
                     
                     <div class="navbar-dropdown">
                         
-                        <a href="/tools/building_blocks/"
-                            class="navbar-item button is-rounded is-dark  ">Bausteine</a>
+                        <a href="/werkzeuge/bausteine/" class="navbar-item button is-rounded is-dark  ">Bausteine</a>
+                        
+                        <a href="/werkzeuge/methoden/" class="navbar-item button is-rounded is-dark  ">Methoden</a>
                         
                     </div>
                 </div>
                 
                 
                 
-                <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable      ">
+                <div class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable      ">
                     
                     
                      <a for="navbar-click" class="navbar-link">Wissen</a>
                     
                     <div class="navbar-dropdown">
                         
-                        <a href="/knowhow/glossary/"
-                            class="navbar-item button is-rounded is-dark  ">Wörterbuch</a>
+                        <a href="/wissen/woerterbuch/" class="navbar-item button is-rounded is-dark  ">Wörterbuch</a>
                         
-                        <a href="/knowhow/publications/"
-                            class="navbar-item button is-rounded is-dark  ">Veröffentlichungen</a>
+                        <a href="/wissen/publikationen/" class="navbar-item button is-rounded is-dark  ">Publikationen</a>
                         
                     </div>
                 </div>
                 
                 
                 
-                <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
+                <div class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
                     
                     
                      <a for="navbar-click" class="navbar-link">Aktuelles</a>
                     
                     <div class="navbar-dropdown">
                         
-                        <a href="/stories/"
-                            class="navbar-item button is-rounded is-dark  ">Neuigkeiten</a>
+                        <a href="/blog/" class="navbar-item button is-rounded is-dark  ">Blog</a>
                         
                     </div>
                 </div>
                 
                 
                 
-                <div
-                    class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable    ">
+                <div class="navbar-item has-text-left button is-rounded is-dark has-dropdown is-hoverable      ">
                     
                     
                      <a for="navbar-click" class="navbar-link">Mitmachen</a>
                     
                     <div class="navbar-dropdown">
                         
-                        <a href="/collaboration/contact/"
-                            class="navbar-item button is-rounded is-dark  ">Kontakt</a>
+                        <a href="/mitmachen/netzwerk/" class="navbar-item button is-rounded is-dark  ">Netzwerk</a>
+                        
+                        <a href="/mitmachen/kontakt/" class="navbar-item button is-rounded is-dark  ">Kontakt</a>
                         
                     </div>
                 </div>
                 
                 
                 
-                <div class="navbar-end">
+   
                     <div class="navbar-item navbar-search">
                         <a id="openSearch">
                             <span class="icon">
@@ -204,7 +193,7 @@ The Default layout that everything is using
                             </span>
                         </a>  
                     </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -242,8 +231,15 @@ The Default layout that everything is using
   })
   </script>
         <div class="arrow-image is-pulled-left is-hidden-mobile">
-            <img id="scroll-up" src="/assets/img/arrow-down.png" alt="placeholder">
-            <img id="scroll-down" src="/assets/img/arrow-down.png" alt="placeholder"  class="is-pointed-down">     
+            <img id="scroll-up" src="/assets/img/arrow-up.svg" alt="placeholder">
+            <img id="scroll-down" src="/assets/img/arrow-up.svg" alt="placeholder" class="is-pointed-down">     
+        </div>
+        <div class="accessibility-image is-pulled-left is-hidden-mobile">
+                <a id="changeFontsize" class="button is-rounded is-dark">
+                    <span class="icon is-small">
+                        <i class="fas icon-font-size fa-xs invert"></i>
+                        </span> 
+                    </a>    
         </div>
         
         
@@ -252,7 +248,7 @@ The Default layout that everything is using
             
             
             <div class="columns is-centered">
-                <div id="content" class="container column is-10-desktop is-12-tablet">
+                <div id="content" class="container column is-9-desktop is-11-tablet">
                     
                     <img src="/assets/img/404.png" alt="placeholder">
 
@@ -283,20 +279,20 @@ The Default layout that everything is using
             <div class="columns footer-nav">
                 
                     <div class="column">
-                        <a href=" " class="link"><strong>Über</strong></a>
+                        <a href="" class="link"><strong>Über</strong></a>
                         
                         <div class="">
                             
                             <div class="">
-                                <a href="/about/plattform" class="link">Plattform</a>
+                                <a href="/ueber/plattform" class="link">Plattform</a>
                             </div>
                             
                             <div class="">
-                                <a href="/about/project/" class="link">Projekt</a>
+                                <a href="/ueber/projekt/" class="link">Projekt</a>
                             </div>
                             
                             <div class="">
-                                <a href="/about/accessibility/" class="link">Barrierearm</a>
+                                <a href="/ueber/barrierearm/" class="link">Barrierearm</a>
                             </div>
                             
                         </div>                                            
@@ -304,20 +300,20 @@ The Default layout that everything is using
                     </div>
                 
                     <div class="column">
-                        <a href=" " class="link"><strong>INTIA-Koffer</strong></a>
+                        <a href="" class="link"><strong>INTIA-Koffer</strong></a>
                         
                         <div class="">
                             
                             <div class="">
-                                <a href="/intia-case/" class="link">Über</a>
+                                <a href="/intia-koffer/" class="link">Über</a>
                             </div>
                             
                             <div class="">
-                                <a href="/intia-case/buy/" class="link">Kaufen</a>
+                                <a href="/intia-koffer/kaufen/" class="link">Kaufen</a>
                             </div>
                             
                             <div class="">
-                                <a href="/intia-case/faq/" class="link">Häufige Fragen</a>
+                                <a href="/intia-koffer/faq/" class="link">Häufige Fragen</a>
                             </div>
                             
                         </div>                                            
@@ -325,12 +321,16 @@ The Default layout that everything is using
                     </div>
                 
                     <div class="column">
-                        <a href=" " class="link"><strong>Werkzeuge</strong></a>
+                        <a href="" class="link"><strong>Werkzeuge</strong></a>
                         
                         <div class="">
                             
                             <div class="">
-                                <a href="/tools/building_blocks/" class="link">Bausteine</a>
+                                <a href="/werkzeuge/bausteine/" class="link">Bausteine</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/werkzeuge/methoden/" class="link">Methoden</a>
                             </div>
                             
                         </div>                                            
@@ -338,29 +338,16 @@ The Default layout that everything is using
                     </div>
                 
                     <div class="column">
-                        <a href=" " class="link"><strong>Wissen</strong></a>
+                        <a href="" class="link"><strong>Wissen</strong></a>
                         
                         <div class="">
                             
                             <div class="">
-                                <a href="/knowhow/glossary/" class="link">Wörterbuch</a>
+                                <a href="/wissen/woerterbuch/" class="link">Wörterbuch</a>
                             </div>
                             
                             <div class="">
-                                <a href="/knowhow/publications/" class="link">Veröffentlichungen</a>
-                            </div>
-                            
-                        </div>                                            
-                    
-                    </div>
-                
-                    <div class="column">
-                        <a href=" " class="link"><strong>Aktuelles</strong></a>
-                        
-                        <div class="">
-                            
-                            <div class="">
-                                <a href="/stories/" class="link">Neuigkeiten</a>
+                                <a href="/wissen/publikationen/" class="link">Publikationen</a>
                             </div>
                             
                         </div>                                            
@@ -368,12 +355,29 @@ The Default layout that everything is using
                     </div>
                 
                     <div class="column">
-                        <a href=" " class="link"><strong>Mitmachen</strong></a>
+                        <a href="" class="link"><strong>Aktuelles</strong></a>
                         
                         <div class="">
                             
                             <div class="">
-                                <a href="/collaboration/contact/" class="link">Kontakt</a>
+                                <a href="/blog/" class="link">Blog</a>
+                            </div>
+                            
+                        </div>                                            
+                    
+                    </div>
+                
+                    <div class="column">
+                        <a href="" class="link"><strong>Mitmachen</strong></a>
+                        
+                        <div class="">
+                            
+                            <div class="">
+                                <a href="/mitmachen/netzwerk/" class="link">Netzwerk</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="/mitmachen/kontakt/" class="link">Kontakt</a>
                             </div>
                             
                         </div>                                            
@@ -396,19 +400,19 @@ The Default layout that everything is using
                 
                 <div class="">
                     <div>
-                        <a href="https://www.th-koeln.de/hochschule/impressum_8159.php" class="link">Impressum</a>
+                        <a href="https://www.th-koeln.de/hochschule/impressum_8159.php" class="link" target="_blank" rel="noopener noreferrer">Impressum</a>
                     </div>
                 </div>
                 
                 <div class="">
                     <div>
-                        <a href="https://www.th-koeln.de/hochschule/haftungshinweis_8277.php" class="link">Haftungshinweis</a>
+                        <a href="https://www.th-koeln.de/hochschule/haftungshinweis_8277.php" class="link" target="_blank" rel="noopener noreferrer">Haftungshinweis</a>
                     </div>
                 </div>
                 
                 <div class="">
                     <div>
-                        <a href="https://www.th-koeln.de/hochschule/datenschutzhinweis_8279.php" class="link">Datenschutzhinweis</a>
+                        <a href="https://www.th-koeln.de/hochschule/datenschutzhinweis_8279.php" class="link" target="_blank" rel="noopener noreferrer">Datenschutzhinweis</a>
                     </div>
                 </div>
                 
