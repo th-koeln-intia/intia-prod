@@ -17,14 +17,6 @@
     } ,
   
     {
-      "title"    : "Modularität",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/blog/modularitaet/",
-      "date"     : "2022-03-30 00:00:00 +0000"
-    } ,
-  
-    {
       "title"    : "Escape Game als leichter Einstieg für den INTIA-Koffer ",
       "category" : "",
       "tags"     : "",
@@ -79,15 +71,15 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/alltagsbewaeltigung/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
-      "title"    : "Bedarf",
+      "title"    : "Bedarf/Bedürfnis",
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/bedarf/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -95,7 +87,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/disability-studies/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -103,7 +95,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/icf/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -111,7 +103,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/medienkompetenzen/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -119,7 +111,23 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/menschenrechliches-modell-der-behinderung/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
+    } ,
+  
+    {
+      "title"    : "Open Educational Resource",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/wissen/woerterbuch/open-educational-resource/",
+      "date"     : "2023-03-30 15:33:07 +0000"
+    } ,
+  
+    {
+      "title"    : "Open Source",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/wissen/woerterbuch/open-source/",
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -127,7 +135,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/partizipation/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -135,7 +143,15 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/personenbezogene-daten/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
+    } ,
+  
+    {
+      "title"    : "Prototyp",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/wissen/woerterbuch/prototyp/",
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -143,7 +159,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/selbstbestimmung/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -151,7 +167,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/soziale-arbeit/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -159,7 +175,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/soziales-modell-der-behinderung/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } ,
   
     {
@@ -167,7 +183,7 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/wissen/woerterbuch/vulnerabel/",
-      "date"     : "2023-02-02 12:48:52 +0000"
+      "date"     : "2023-03-30 15:33:07 +0000"
     } 
   
   ,
@@ -238,7 +254,17 @@
   
     {
       
-        "title"    : "Blog",
+        "title"    : "Fachartikel",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/articles/",
+        "date"     : ""
+      
+    } ,
+  
+    {
+      
+        "title"    : "Aktivitäten",
         "category" : "",
         "tags"     : "",
         "url"      : "/blog/",
@@ -258,10 +284,10 @@
   
     {
       
-        "title"    : "Kaufen",
+        "title"    : "Erwerben",
         "category" : "",
         "tags"     : "",
-        "url"      : "/intia-koffer/kaufen/",
+        "url"      : "/intia-koffer/erwerben/",
         "date"     : ""
       
     } ,
@@ -278,7 +304,7 @@
   
     {
       
-        "title"    : "Kontakt",
+        "title"    : "Schreib&#39; uns!",
         "category" : "",
         "tags"     : "",
         "url"      : "/mitmachen/kontakt/",
@@ -308,7 +334,7 @@
   
     {
       
-        "title"    : "Willkommen bei  INTIA",
+        "title"    : "INTIA – Inklusive Technikideen für den Alltag",
         "category" : "",
         "tags"     : "",
         "url"      : "/",
@@ -348,7 +374,7 @@
   
     {
       
-        "title"    : "Über den INTIA-Koffer",
+        "title"    : "Was ist der INTIA Koffer?",
         "category" : "",
         "tags"     : "",
         "url"      : "/intia-koffer/",
@@ -362,16 +388,6 @@
         "category" : "",
         "tags"     : "",
         "url"      : "/intia-koffer/old",
-        "date"     : ""
-      
-    } ,
-  
-    {
-      
-        "title"    : "Literatur",
-        "category" : "",
-        "tags"     : "",
-        "url"      : "/wissen/literatur/",
         "date"     : ""
       
     } ,
@@ -398,10 +414,20 @@
   
     {
       
-        "title"    : "Projekt",
+        "title"    : "Das Forschungs-Projekt INTIA",
         "category" : "",
         "tags"     : "",
         "url"      : "/ueber/projekt/",
+        "date"     : ""
+      
+    } ,
+  
+    {
+      
+        "title"    : "Prototypen",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/intia-koffer/prototypen/",
         "date"     : ""
       
     } ,
